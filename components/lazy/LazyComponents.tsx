@@ -85,22 +85,10 @@ export function withLazyLoading<P extends object>(
   }
 }
 
-// Lazy loaded dashboard components
-export const LazyDashboardStats = lazy(() => 
-  import('../dashboard/DashboardStats').then(module => ({
-    default: module.DashboardStats
-  }))
-)
-
+// Lazy loaded components
 export const LazyUserProfile = lazy(() => 
   import('../auth/UserProfile').then(module => ({
     default: module.UserProfile
-  }))
-)
-
-export const LazyDashboardLayout = lazy(() => 
-  import('../dashboard/DashboardLayout').then(module => ({
-    default: module.DashboardLayout
   }))
 )
 
@@ -130,15 +118,12 @@ export const LazyReportDetailPage = lazy(() =>
 )
 
 // Wrapped components with loading states
-export const DashboardStatsLazy = withLazyLoading(LazyDashboardStats, 'Loading dashboard statistics...')
 export const UserProfileLazy = withLazyLoading(LazyUserProfile, 'Loading user profile...')
-export const DashboardLayoutLazy = withLazyLoading(LazyDashboardLayout, 'Loading dashboard...')
 export const LoginFormLazy = withLazyLoading(LazyLoginForm, 'Loading login form...')
 export const RegisterFormLazy = withLazyLoading(LazyRegisterForm, 'Loading registration form...')
 
 // Preload functions for critical components
 export const preloadComponents = {
-  dashboardStats: () => import('../dashboard/DashboardStats'),
   userProfile: () => import('../auth/UserProfile'),
   loginForm: () => import('../auth/LoginForm'),
   registerForm: () => import('../auth/RegisterForm'),
@@ -146,13 +131,6 @@ export const preloadComponents = {
 
 // Preload critical components on user interaction
 export function preloadCriticalComponents() {
-  // Preload dashboard stats when user hovers over dashboard link
-  const dashboardLinks = document.querySelectorAll('[href*="/dashboard"]')
-  dashboardLinks.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      preloadComponents.dashboardStats()
-    }, { once: true })
-  })
 
   // Preload auth forms when user hovers over auth links
   const authLinks = document.querySelectorAll('[href*="/auth"]')
@@ -182,13 +160,13 @@ if (typeof window !== 'undefined') {
   }
 }
 
-export default {
-  DashboardStatsLazy,
+const LazyComponentsExport = {
   UserProfileLazy,
-  DashboardLayoutLazy,
   LoginFormLazy,
   RegisterFormLazy,
   withLazyLoading,
   preloadComponents,
   preloadCriticalComponents
 }
+
+export default LazyComponentsExport

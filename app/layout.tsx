@@ -80,7 +80,7 @@ export const metadata: Metadata = {
       { rel: 'mask-icon', url: '/icons/favicon.svg', color: '#4f46e5' }
     ]
   },
-  metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:4000'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -110,6 +110,15 @@ export const metadata: Metadata = {
       index: process.env.NODE_ENV === 'production' || process.env.ALLOW_SEO_TESTING === 'true',
       follow: process.env.NODE_ENV === 'production' || process.env.ALLOW_SEO_TESTING === 'true'
     }
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'apple-mobile-web-app-title': 'NPCL Dashboard',
+    'application-name': 'NPCL Dashboard',
+    'msapplication-TileColor': '#4f46e5',
+    'msapplication-tap-highlight': 'no'
   }
 }
 
@@ -132,22 +141,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <head>
-        {/* PWA Meta Tags */}
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="NPCL Dashboard" />
-        <meta name="application-name" content="NPCL Dashboard" />
-        <meta name="msapplication-TileColor" content="#4f46e5" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        
-        {/* Critical Resource Hints - Only for actually used resources */}
-        <link rel="dns-prefetch" href="//localhost" />
-        
-        {/* Resource hints for better performance */}
-        <meta httpEquiv="x-dns-prefetch-control" content="on" />
-      </head>
       <body className={`${inter.className} h-full antialiased`}>
         <SessionProvider>
           <PWAProvider>

@@ -132,7 +132,7 @@ export const isEmailConfigured = (): boolean => {
 
 // Get application base URL based on environment
 export const getBaseUrl = (): string => {
-  return isProduction ? serverEnv.NEXTAUTH_URL : 'http://localhost:3000';
+  return isProduction ? serverEnv.NEXTAUTH_URL : 'http://localhost:4000';
 };
 
 // Get API endpoint base URL

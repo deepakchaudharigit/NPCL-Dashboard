@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXTAUTH_URL || 'http://localhost:3000'
+  const baseUrl = process.env.NEXTAUTH_URL || 'http://localhost:4000'
   const isProduction = process.env.NODE_ENV === 'production'
   const allowTesting = process.env.ALLOW_SEO_TESTING === 'true'
   

@@ -30,7 +30,7 @@ interface ClientEnvironmentConfig {
 export const clientEnv: ClientEnvironmentConfig = {
   // API configuration
   API_URL: process.env.NEXT_PUBLIC_API_URL || 
-           (typeof window !== 'undefined' ? `${window.location.origin}/api` : 'http://localhost:3000/api'),
+           (typeof window !== 'undefined' ? `${window.location.origin}/api` : 'http://localhost:4000/api'),
 
   // Feature flags
   ENABLE_REGISTRATION: process.env.NEXT_PUBLIC_ENABLE_REGISTRATION !== 'false',

@@ -9,7 +9,7 @@ export async function GET() {
     title: 'NPCL Dashboard API Documentation',
     version: '1.0.0',
     description: 'JSON API for NPCL Power Management Dashboard',
-    baseUrl: process.env.NEXTAUTH_URL || 'http://localhost:3000',
+    baseUrl: process.env.NEXTAUTH_URL || 'http://localhost:4000',
     
     authentication: {
       description: 'The API uses NextAuth.js for authentication with session-based auth',

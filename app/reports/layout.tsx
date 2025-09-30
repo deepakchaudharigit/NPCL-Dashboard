@@ -2,7 +2,7 @@
 
 import { Sidebar } from '@/components/voicebot/Sidebar'
 
-export default function DashboardLayout({
+export default function ReportsLayout({
   children,
 }: {
   children: React.ReactNode

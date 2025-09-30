@@ -83,7 +83,7 @@ npcl-dashboard/
    ```env
    DATABASE_URL="postgresql://username:password@localhost:5432/npcl_dashboard"
    NEXTAUTH_SECRET="your-secret-key-here-make-it-long-and-random"
-   NEXTAUTH_URL="http://localhost:3000"
+   NEXTAUTH_URL="http://localhost:4000"
    ```
 4. **Set up the database**
 
@@ -103,7 +103,7 @@ npcl-dashboard/
    npm run dev
    ```
 6. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://localhost:4000](http://localhost:4000)
 
 ## Default Users
 

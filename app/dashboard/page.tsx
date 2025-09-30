@@ -1,181 +1,80 @@
 'use client'
 
 import { useState } from 'react'
-import { useAuth } from '@/hooks/use-auth'
-import { UserProfile } from '@/components/auth/UserProfile'
-import { DashboardStats } from '@/components/dashboard/DashboardStats'
-import { RoleGuard, AdminOnly, OperatorOrAdmin } from '@/components/auth/RoleGuard'
-import { UserRoleEnum } from '@/lib/constants/roles'
-import type { Permission } from '@lib/rbac.client'
+import { 
+  PhoneIcon, 
+  ClockIcon, 
+  GlobeAltIcon, 
+  DocumentTextIcon,
+  ChevronDownIcon,
+  CalendarIcon
+} from '@heroicons/react/24/outline'
+import { MetricsCard } from '@/components/voicebot/MetricsCard'
+import { CallsByLanguageChart } from '@/components/voicebot/CallsByLanguageChart'
+import { CallsByStatusPanel } from '@/components/voicebot/CallsByStatusPanel'
 
 export default function DashboardPage() {
-  const { user, isAuthenticated, isLoading } = useAuth()
-  const [timeRange, setTimeRange] = useState('24h')
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading dashboard...</p>
-        </div>
-      </div>
-    )
-  }
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Access Denied</h2>
-          <p className="text-gray-600">Please sign in to access the dashboard.</p>
-        </div>
-      </div>
-    )
-  }
+  const [dateRange] = useState('16 Jan, 2025 - 16 Feb, 2025')
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="px-4 py-6 sm:px-0">
-          <div className="border-4 border-dashed border-gray-200 rounded-lg p-6">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              NPCL Power Management Dashboard
-            </h1>
-            <p className="text-gray-600">
-              Welcome back, {user?.name}! Here's your system overview.
-            </p>
-          </div>
+    <div className="w-full h-full flex flex-col">
+      {/* Header Section */}
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-4 flex-shrink-0">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">Dashboard</h1>
+        
+        {/* Date Range Picker */}
+        <div className="relative">
+          <button className="w-full md:w-60 h-10 bg-white border border-gray-200 rounded-lg px-4 flex items-center justify-between text-sm text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors cursor-pointer">
+            <span>{dateRange}</span>
+            <CalendarIcon className="h-4 w-4 text-gray-500" />
+          </button>
         </div>
+      </div>
 
-        <div className="px-4 py-6 sm:px-0">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* User Profile */}
-            <div className="lg:col-span-1">
-              <UserProfile />
-            </div>
+      {/* Metric Cards Row */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6 flex-shrink-0">
+        <MetricsCard
+          title="Total Calls"
+          value="18"
+          growth="+12% from yesterday"
+          icon={<PhoneIcon className="w-6 h-6" />}
+          iconBgColor="#EEF2FF"
+          iconColor="#6366F1"
+        />
+        
+        <MetricsCard
+          title="Avg Duration"
+          value="2:35"
+          growth="+5% from yesterday"
+          icon={<ClockIcon className="w-6 h-6" />}
+          iconBgColor="#F5F3FF"
+          iconColor="#8B5CF6"
+        />
+        
+        <MetricsCard
+          title="Language"
+          value="6"
+          growth="+12% from yesterday"
+          icon={<GlobeAltIcon className="w-6 h-6" />}
+          iconBgColor="#FDF2F8"
+          iconColor="#EC4899"
+        />
+        
+        <MetricsCard
+          title="Docket Count"
+          value="56"
+          growth="-35% from yesterday"
+          icon={<DocumentTextIcon className="w-6 h-6" />}
+          iconBgColor="#FFFBEB"
+          iconColor="#F59E0B"
+          isNegative={true}
+        />
+      </div>
 
-            {/* Main Content */}
-            <div className="lg:col-span-2 space-y-6">
-              {/* Time Range Selector */}
-              <div className="bg-white shadow rounded-lg p-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-medium text-gray-900">Dashboard Overview</h3>
-                  <select
-                    value={timeRange}
-                    onChange={(e) => setTimeRange(e.target.value)}
-                    className="border border-gray-300 rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                  >
-                    <option value="1h">Last Hour</option>
-                    <option value="24h">Last 24 Hours</option>
-                    <option value="7d">Last 7 Days</option>
-                    <option value="30d">Last 30 Days</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Dashboard Stats */}
-              <DashboardStats timeRange={timeRange} />
-
-              {/* Role-based content */}
-              <AdminOnly>
-                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                  <h3 className="text-lg font-medium text-red-800 mb-2">
-                    Administrator Panel
-                  </h3>
-                  <p className="text-red-700 text-sm">
-                    You have full administrative access to the system.
-                  </p>
-                  <div className="mt-3">
-                    <button className="bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700">
-                      Manage Users
-                    </button>
-                  </div>
-                </div>
-              </AdminOnly>
-
-              <OperatorOrAdmin>
-                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <h3 className="text-lg font-medium text-yellow-800 mb-2">
-                    Operator Controls
-                  </h3>
-                  <p className="text-yellow-700 text-sm">
-                    You can manage power units and maintenance schedules.
-                  </p>
-                  <div className="mt-3 space-x-2">
-                    <button className="bg-yellow-600 text-white px-4 py-2 rounded-md text-sm hover:bg-yellow-700">
-                      Manage Power Units
-                    </button>
-                    <button className="bg-yellow-600 text-white px-4 py-2 rounded-md text-sm hover:bg-yellow-700">
-                      Schedule Maintenance
-                    </button>
-                  </div>
-                </div>
-              </OperatorOrAdmin>
-
-              {/* Permission-based content */}
-              <RoleGuard requiredPermission={"reports.view" as Permission}>
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <h3 className="text-lg font-medium text-blue-800 mb-2">
-                    Reports & Analytics
-                  </h3>
-                  <p className="text-blue-700 text-sm">
-                    View system reports and performance analytics.
-                  </p>
-                  <div className="mt-3">
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700">
-                      View Reports
-                    </button>
-                  </div>
-                </div>
-              </RoleGuard>
-
-              {/* Role-specific features */}
-              <div className="bg-white shadow rounded-lg p-6">
-                <h3 className="text-lg font-medium text-gray-900 mb-4">
-                  Available Features
-                </h3>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-700">View Dashboard</span>
-                    <span className="text-green-600 text-sm">✓ Available</span>
-                  </div>
-                  
-                  <RoleGuard 
-                    allowedRoles={[UserRoleEnum.OPERATOR, UserRoleEnum.ADMIN]}
-                    fallback={
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-gray-500">Manage Power Units</span>
-                        <span className="text-red-600 text-sm">✗ Restricted</span>
-                      </div>
-                    }
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700">Manage Power Units</span>
-                      <span className="text-green-600 text-sm">✓ Available</span>
-                    </div>
-                  </RoleGuard>
-
-                  <AdminOnly
-                    fallback={
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-gray-500">User Management</span>
-                        <span className="text-red-600 text-sm">✗ Admin Only</span>
-                      </div>
-                    }
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700">User Management</span>
-                      <span className="text-green-600 text-sm">✓ Available</span>
-                    </div>
-                  </AdminOnly>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Charts Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full flex-1 min-h-0">
+        <CallsByLanguageChart />
+        <CallsByStatusPanel />
       </div>
     </div>
   )

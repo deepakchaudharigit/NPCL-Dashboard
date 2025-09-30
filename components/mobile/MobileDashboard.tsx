@@ -5,11 +5,11 @@
 
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { ResponsiveLayout, ResponsiveGrid, ResponsiveCard } from '@/components/layout/ResponsiveLayout'
 import { TouchButton, PullToRefresh, FloatingActionButton } from '@/components/mobile/TouchOptimized'
-import { DashboardStatsLazy } from '@/components/lazy/LazyComponents'
-import { OptimizedImage } from '@/components/ui/OptimizedImage'
+// import { DashboardStatsLazy } from '@/components/lazy/LazyComponents'
+// import { OptimizedImage } from '@/components/ui/OptimizedImage'
 
 interface DashboardData {
   totalUsers: number
@@ -34,11 +34,7 @@ export function MobileDashboard() {
   const [lastRefresh, setLastRefresh] = useState<Date>(new Date())
   const [timeRange, setTimeRange] = useState('24h')
 
-  useEffect(() => {
-    loadDashboardData()
-  }, [timeRange])
-
-  const loadDashboardData = async () => {
+  const loadDashboardData = useCallback(async () => {
     try {
       setIsLoading(true)
       const response = await fetch(`/api/dashboard/stats?timeRange=${timeRange}`)
@@ -53,7 +49,11 @@ export function MobileDashboard() {
     } finally {
       setIsLoading(false)
     }
-  }
+  }, [timeRange])
+
+  useEffect(() => {
+    loadDashboardData()
+  }, [loadDashboardData])
 
   const handleRefresh = async () => {
     await loadDashboardData()
@@ -228,9 +228,12 @@ export function MobileDashboard() {
             </div>
           )}
 
-          {/* Performance Metrics */}
+          {/* Performance Metrics - Placeholder */}
           <div className="px-4">
-            <DashboardStatsLazy timeRange={timeRange} />
+            <div className="bg-white rounded-lg p-4 border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Performance Metrics</h3>
+              <p className="text-gray-600">Performance metrics will be displayed here.</p>
+            </div>
           </div>
         </div>
       </PullToRefresh>

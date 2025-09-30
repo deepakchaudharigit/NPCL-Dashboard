@@ -1,18 +1,18 @@
 /**
  * Home Page Component
- * Landing page with login options and demo credentials for the NPCL Dashboard power management system.
+ * Landing page with login options and demo credentials for the NPCL VoiceBot Call Management System.
  */
 
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NPCL Dashboard - Power Management System',
-  description: 'Welcome to NPCL Dashboard - A comprehensive power management system for real-time monitoring, analytics, and grid operations. Login to access advanced power generation and distribution tools.',
-  keywords: ['NPCL', 'power management', 'dashboard', 'energy monitoring', 'grid operations', 'power generation', 'electricity management'],
+  title: 'NPCL VoiceBot Dashboard - Call Management System',
+  description: 'Welcome to NPCL VoiceBot Dashboard - A comprehensive call management system for VoiceBot interactions, analytics, and customer service operations.',
+  keywords: ['NPCL', 'voicebot', 'call management', 'dashboard', 'customer service', 'analytics', 'voice recognition'],
   openGraph: {
-    title: 'NPCL Dashboard - Power Management System',
-    description: 'Comprehensive power management system for real-time monitoring and analytics',
+    title: 'NPCL VoiceBot Dashboard - Call Management System',
+    description: 'Comprehensive VoiceBot call management system for customer service analytics',
     type: 'website',
   },
 }
@@ -23,10 +23,10 @@ export default function HomePage() {
       <div className="max-w-md w-full space-y-8 p-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            NPCL Dashboard
+            NPCL VoiceBot
           </h1>
           <p className="text-gray-600 mb-8">
-            Power Management System
+            Call Management Dashboard
           </p>
           
           <div className="space-y-4">
