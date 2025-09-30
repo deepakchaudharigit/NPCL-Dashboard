@@ -1,0 +1,182 @@
+call_id,cli,received_datetime,language,query_type,status,tickets_identified,transferred_to_ivr,voice_duration,duration_seconds
+CALL1001,+91-9876543210,2025-09-30 09:30:15,Hindi,Technical Support,Docket generated,2,2025-09-30 09:33:15,3:00,180
+CALL1002,+91-9876543211,2025-09-30 10:15:30,English,Billing Inquiry,Resolved,1,2025-09-30 10:20:45,2:15,135
+CALL1003,+91-9876543212,2025-09-30 11:45:10,Bengali,Connection request,Missing,0,,1:23,83
+CALL1004,+91-9876543213,2025-09-30 14:20:45,Telugu,Load shedding complaint,Aborted,0,,0:45,45
+CALL1005,+91-9876543214,2025-09-30 15:30:20,Tamil,Transformer issue,Docket generated,3,2025-09-30 15:35:10,4:12,252
+CALL1006,+91-9876543215,2025-09-29 08:15:30,Marathi,Service Outage Report,Resolved,2,2025-09-29 08:20:15,2:45,165
+CALL1007,+91-9876543216,2025-09-29 12:30:45,Gujarati,General Inquiry,Docket under review,1,2025-09-29 12:35:20,1:55,115
+CALL1008,+91-9876543217,2025-09-29 16:45:20,Kannada,Product Feedback,Docket generated,4,2025-09-29 16:50:10,3:30,210
+CALL1009,+91-9876543218,2025-09-28 09:20:15,Urdu,Complaint Resolution,Resolved,5,2025-09-28 09:25:30,5:15,315
+CALL1010,+91-9876543219,2025-09-28 13:40:25,Hindi,Account Recovery,Docket generated,2,2025-09-28 13:45:10,2:20,140
+CALL1011,+91-9876543220,2025-09-27 10:15:30,English,Feature Request,Missing,1,,1:45,105
+CALL1012,+91-9876543221,2025-09-27 14:30:45,Bengali,Subscription Cancellation,Resolved,3,2025-09-27 14:35:20,3:10,190
+CALL1013,+91-9876543222,2025-09-26 11:20:15,Telugu,Refund Request,Docket generated,2,2025-09-26 11:25:30,2:35,155
+CALL1014,+91-9876543223,2025-09-26 15:45:30,Tamil,Technical Support,Aborted,0,,0:30,30
+CALL1015,+91-9876543224,2025-09-25 09:30:45,Marathi,Billing Inquiry,Resolved,1,2025-09-25 09:35:20,1:50,110
+CALL1016,+91-9876543225,2025-09-25 13:15:20,Gujarati,Connection request,Docket generated,4,2025-09-25 13:20:15,4:05,245
+CALL1017,+91-9876543226,2025-09-24 08:45:30,Kannada,Load shedding complaint,Missing,0,,1:15,75
+CALL1018,+91-9876543227,2025-09-24 12:20:45,Urdu,Transformer issue,Resolved,3,2025-09-24 12:25:30,3:45,225
+CALL1019,+91-9876543228,2025-09-23 10:30:15,Hindi,Service Outage Report,Docket generated,2,2025-09-23 10:35:10,2:55,175
+CALL1020,+91-9876543229,2025-09-23 14:45:20,English,General Inquiry,Docket under review,1,2025-09-23 14:50:15,1:40,100
+CALL1021,+91-9876543230,2025-09-22 09:15:30,Bengali,Product Feedback,Resolved,5,2025-09-22 09:20:25,5:30,330
+CALL1022,+91-9876543231,2025-09-22 13:30:45,Telugu,Complaint Resolution,Docket generated,3,2025-09-22 13:35:20,3:20,200
+CALL1023,+91-9876543232,2025-09-21 11:45:15,Tamil,Account Recovery,Missing,0,,0:55,55
+CALL1024,+91-9876543233,2025-09-21 15:20:30,Marathi,Feature Request,Resolved,2,2025-09-21 15:25:15,2:40,160
+CALL1025,+91-9876543234,2025-09-20 08:30:45,Gujarati,Subscription Cancellation,Docket generated,4,2025-09-20 08:35:30,4:15,255
+CALL1026,+91-9876543235,2025-09-19 12:15:20,Kannada,Refund Request,Aborted,0,,0:40,40
+CALL1027,+91-9876543236,2025-09-19 16:30:15,Urdu,Technical Support,Resolved,1,2025-09-19 16:35:10,1:35,95
+CALL1028,+91-9876543237,2025-09-18 10:45:30,Hindi,Billing Inquiry,Docket generated,3,2025-09-18 10:50:25,3:25,205
+CALL1029,+91-9876543238,2025-09-18 14:20:45,English,Connection request,Missing,0,,1:10,70
+CALL1030,+91-9876543239,2025-09-17 09:30:15,Bengali,Load shedding complaint,Resolved,2,2025-09-17 09:35:20,2:50,170
+CALL1031,+91-9876543240,2025-09-16 13:45:30,Telugu,Transformer issue,Docket generated,5,2025-09-16 13:50:15,5:10,310
+CALL1032,+91-9876543241,2025-09-15 11:20:45,Tamil,Service Outage Report,Docket under review,1,2025-09-15 11:25:30,1:45,105
+CALL1033,+91-9876543242,2025-09-14 15:30:20,Marathi,General Inquiry,Resolved,3,2025-09-14 15:35:15,3:15,195
+CALL1034,+91-9876543243,2025-09-13 08:45:15,Gujarati,Product Feedback,Docket generated,2,2025-09-13 08:50:10,2:30,150
+CALL1035,+91-9876543244,2025-09-12 12:30:30,Kannada,Complaint Resolution,Missing,0,,0:50,50
+CALL1036,+91-9876543245,2025-09-11 16:15:45,Urdu,Account Recovery,Resolved,4,2025-09-11 16:20:30,4:20,260
+CALL1037,+91-9876543246,2025-09-10 10:20:15,Hindi,Feature Request,Docket generated,1,2025-09-10 10:25:20,1:55,115
+CALL1038,+91-9876543247,2025-09-09 14:35:30,English,Subscription Cancellation,Aborted,0,,0:35,35
+CALL1039,+91-9876543248,2025-09-08 09:45:45,Bengali,Refund Request,Resolved,3,2025-09-08 09:50:30,3:35,215
+CALL1040,+91-9876543249,2025-09-07 13:20:20,Telugu,Technical Support,Docket generated,2,2025-09-07 13:25:15,2:45,165
+CALL1041,+91-9876543250,2025-09-06 11:30:15,Tamil,Billing Inquiry,Missing,0,,1:20,80
+CALL1042,+91-9876543251,2025-09-05 15:45:30,Marathi,Connection request,Resolved,5,2025-09-05 15:50:25,5:25,325
+CALL1043,+91-9876543252,2025-09-04 08:15:45,Gujarati,Load shedding complaint,Docket generated,1,2025-09-04 08:20:30,1:40,100
+CALL1044,+91-9876543253,2025-09-03 12:30:20,Kannada,Transformer issue,Docket under review,4,2025-09-03 12:35:15,4:10,250
+CALL1045,+91-9876543254,2025-09-02 16:45:15,Urdu,Service Outage Report,Resolved,2,2025-09-02 16:50:10,2:25,145
+CALL1046,+91-9876543255,2025-09-01 10:20:30,Hindi,General Inquiry,Docket generated,3,2025-09-01 10:25:25,3:05,185
+CALL1047,+91-9876543256,2025-08-31 14:35:45,English,Product Feedback,Missing,0,,0:45,45
+CALL1048,+91-9876543257,2025-08-30 09:50:20,Bengali,Complaint Resolution,Resolved,1,2025-08-30 09:55:15,1:30,90
+CALL1049,+91-9876543258,2025-08-29 13:15:15,Telugu,Account Recovery,Docket generated,4,2025-08-29 13:20:10,4:25,265
+CALL1050,+91-9876543259,2025-08-28 11:40:30,Tamil,Feature Request,Aborted,0,,0:25,25
+CALL1051,+91-9876543260,2025-08-27 15:25:45,Marathi,Subscription Cancellation,Resolved,2,2025-08-27 15:30:40,2:15,135
+CALL1052,+91-9876543261,2025-08-26 08:30:20,Gujarati,Refund Request,Docket generated,5,2025-08-26 08:35:15,5:35,335
+CALL1053,+91-9876543262,2025-08-25 12:45:15,Kannada,Technical Support,Missing,0,,1:05,65
+CALL1054,+91-9876543263,2025-08-24 16:20:30,Urdu,Billing Inquiry,Resolved,3,2025-08-24 16:25:25,3:40,220
+CALL1055,+91-9876543264,2025-08-23 10:35:45,Hindi,Connection request,Docket generated,1,2025-08-23 10:40:30,1:25,85
+CALL1056,+91-9876543265,2025-08-22 14:50:20,English,Load shedding complaint,Docket under review,4,2025-08-22 14:55:15,4:30,270
+CALL1057,+91-9876543266,2025-08-21 09:15:15,Bengali,Transformer issue,Resolved,2,2025-08-21 09:20:10,2:10,130
+CALL1058,+91-9876543267,2025-08-20 13:30:30,Telugu,Service Outage Report,Docket generated,5,2025-08-20 13:35:25,5:20,320
+CALL1059,+91-9876543268,2025-08-19 11:45:45,Tamil,General Inquiry,Missing,0,,0:55,55
+CALL1060,+91-9876543269,2025-08-18 15:20:20,Marathi,Product Feedback,Resolved,3,2025-08-18 15:25:15,3:30,210
+CALL1061,+91-9876543270,2025-08-17 08:35:15,Gujarati,Complaint Resolution,Docket generated,1,2025-08-17 08:40:10,1:50,110
+CALL1062,+91-9876543271,2025-08-16 12:50:30,Kannada,Account Recovery,Aborted,0,,0:30,30
+CALL1063,+91-9876543272,2025-08-15 16:15:45,Urdu,Feature Request,Resolved,4,2025-08-15 16:20:40,4:35,275
+CALL1064,+91-9876543273,2025-08-14 10:30:20,Hindi,Subscription Cancellation,Docket generated,2,2025-08-14 10:35:15,2:20,140
+CALL1065,+91-9876543274,2025-08-13 14:45:15,English,Refund Request,Missing,0,,1:15,75
+CALL1066,+91-9876543275,2025-08-12 09:20:30,Bengali,Technical Support,Resolved,5,2025-08-12 09:25:25,5:45,345
+CALL1067,+91-9876543276,2025-08-11 13:35:45,Telugu,Billing Inquiry,Docket generated,3,2025-08-11 13:40:30,3:25,205
+CALL1068,+91-9876543277,2025-08-10 11:50:20,Tamil,Connection request,Docket under review,1,2025-08-10 11:55:15,1:35,95
+CALL1069,+91-9876543278,2025-08-09 15:15:15,Marathi,Load shedding complaint,Resolved,4,2025-08-09 15:20:10,4:15,255
+CALL1070,+91-9876543279,2025-08-08 08:40:30,Gujarati,Transformer issue,Docket generated,2,2025-08-08 08:45:25,2:35,155
+CALL1071,+91-9876543280,2025-08-07 12:25:45,Kannada,Service Outage Report,Missing,0,,0:40,40
+CALL1072,+91-9876543281,2025-08-06 16:40:20,Urdu,General Inquiry,Resolved,3,2025-08-06 16:45:15,3:50,230
+CALL1073,+91-9876543282,2025-08-05 10:55:15,Hindi,Product Feedback,Docket generated,1,2025-08-05 11:00:10,1:45,105
+CALL1074,+91-9876543283,2025-08-04 14:20:30,English,Complaint Resolution,Aborted,0,,0:20,20
+CALL1075,+91-9876543284,2025-08-03 09:35:45,Bengali,Account Recovery,Resolved,5,2025-08-03 09:40:30,5:15,315
+CALL1076,+91-9876543285,2025-08-02 13:50:20,Telugu,Feature Request,Docket generated,2,2025-08-02 13:55:15,2:25,145
+CALL1077,+91-9876543286,2025-08-01 11:15:15,Tamil,Subscription Cancellation,Missing,0,,1:10,70
+CALL1078,+91-9876543287,2025-07-31 15:30:30,Marathi,Refund Request,Resolved,4,2025-07-31 15:35:25,4:05,245
+CALL1079,+91-9876543288,2025-07-30 08:45:45,Gujarati,Technical Support,Docket generated,3,2025-07-30 08:50:30,3:15,195
+CALL1080,+91-9876543289,2025-07-29 12:20:20,Kannada,Billing Inquiry,Docket under review,1,2025-07-29 12:25:15,1:20,80
+CALL1081,+91-9876543290,2025-07-28 16:35:15,Urdu,Connection request,Resolved,2,2025-07-28 16:40:10,2:45,165
+CALL1082,+91-9876543291,2025-07-27 10:50:30,Hindi,Load shedding complaint,Docket generated,5,2025-07-27 10:55:25,5:30,330
+CALL1083,+91-9876543292,2025-07-26 14:15:45,English,Transformer issue,Missing,0,,0:35,35
+CALL1084,+91-9876543293,2025-07-25 09:40:20,Bengali,Service Outage Report,Resolved,3,2025-07-25 09:45:15,3:45,225
+CALL1085,+91-9876543294,2025-07-24 13:25:15,Telugu,General Inquiry,Docket generated,1,2025-07-24 13:30:10,1:55,115
+CALL1086,+91-9876543295,2025-07-23 11:40:30,Tamil,Product Feedback,Aborted,0,,0:45,45
+CALL1087,+91-9876543296,2025-07-22 15:55:45,Marathi,Complaint Resolution,Resolved,4,2025-07-22 16:00:30,4:40,280
+CALL1088,+91-9876543297,2025-07-21 08:20:20,Gujarati,Account Recovery,Docket generated,2,2025-07-21 08:25:15,2:30,150
+CALL1089,+91-9876543298,2025-07-20 12:35:15,Kannada,Feature Request,Missing,0,,1:25,85
+CALL1090,+91-9876543299,2025-07-19 16:50:30,Urdu,Subscription Cancellation,Resolved,5,2025-07-19 16:55:25,5:40,340
+CALL1091,+91-9876543300,2025-07-18 10:15:45,Hindi,Refund Request,Docket generated,3,2025-07-18 10:20:30,3:20,200
+CALL1092,+91-9876543301,2025-07-17 14:30:20,English,Technical Support,Docket under review,1,2025-07-17 14:35:15,1:40,100
+CALL1093,+91-9876543302,2025-07-16 09:45:15,Bengali,Billing Inquiry,Resolved,4,2025-07-16 09:50:10,4:25,265
+CALL1094,+91-9876543303,2025-07-15 13:20:30,Telugu,Connection request,Docket generated,2,2025-07-15 13:25:25,2:15,135
+CALL1095,+91-9876543304,2025-07-14 11:35:45,Tamil,Load shedding complaint,Missing,0,,0:50,50
+CALL1096,+91-9876543305,2025-07-13 15:50:20,Marathi,Transformer issue,Resolved,3,2025-07-13 15:55:15,3:35,215
+CALL1097,+91-9876543306,2025-07-12 08:15:15,Gujarati,Service Outage Report,Docket generated,1,2025-07-12 08:20:10,1:30,90
+CALL1098,+91-9876543307,2025-07-11 12:30:30,Kannada,General Inquiry,Aborted,0,,0:25,25
+CALL1099,+91-9876543308,2025-07-10 16:45:45,Urdu,Product Feedback,Resolved,5,2025-07-10 16:50:30,5:25,325
+CALL1100,+91-9876543309,2025-07-09 10:20:20,Hindi,Complaint Resolution,Docket generated,2,2025-07-09 10:25:15,2:40,160
+CALL1101,+91-9876543310,2025-06-30 14:35:15,English,Account Recovery,Missing,0,,1:15,75
+CALL1102,+91-9876543311,2025-06-29 09:50:30,Bengali,Feature Request,Resolved,4,2025-06-29 09:55:25,4:20,260
+CALL1103,+91-9876543312,2025-06-28 13:15:45,Telugu,Subscription Cancellation,Docket generated,3,2025-06-28 13:20:30,3:10,190
+CALL1104,+91-9876543313,2025-06-27 11:40:20,Tamil,Refund Request,Docket under review,1,2025-06-27 11:45:15,1:25,85
+CALL1105,+91-9876543314,2025-06-26 15:25:15,Marathi,Technical Support,Resolved,2,2025-06-26 15:30:10,2:50,170
+CALL1106,+91-9876543315,2025-06-25 08:50:30,Gujarati,Billing Inquiry,Docket generated,5,2025-06-25 08:55:25,5:15,315
+CALL1107,+91-9876543316,2025-06-24 12:15:45,Kannada,Connection request,Missing,0,,0:40,40
+CALL1108,+91-9876543317,2025-06-23 16:30:20,Urdu,Load shedding complaint,Resolved,3,2025-06-23 16:35:15,3:25,205
+CALL1109,+91-9876543318,2025-06-22 10:45:15,Hindi,Transformer issue,Docket generated,1,2025-06-22 10:50:10,1:35,95
+CALL1110,+91-9876543319,2025-06-21 14:20:30,English,Service Outage Report,Aborted,0,,0:30,30
+CALL1111,+91-9876543320,2025-05-31 09:35:45,Bengali,General Inquiry,Resolved,4,2025-05-31 09:40:30,4:30,270
+CALL1112,+91-9876543321,2025-05-30 13:50:20,Telugu,Product Feedback,Docket generated,2,2025-05-30 13:55:15,2:20,140
+CALL1113,+91-9876543322,2025-05-29 11:15:15,Tamil,Complaint Resolution,Missing,0,,1:05,65
+CALL1114,+91-9876543323,2025-05-28 15:30:30,Marathi,Account Recovery,Resolved,5,2025-05-28 15:35:25,5:35,335
+CALL1115,+91-9876543324,2025-05-27 08:45:45,Gujarati,Feature Request,Docket generated,3,2025-05-27 08:50:30,3:05,185
+CALL1116,+91-9876543325,2025-05-26 12:20:20,Kannada,Subscription Cancellation,Docket under review,1,2025-05-26 12:25:15,1:45,105
+CALL1117,+91-9876543326,2025-05-25 16:35:15,Urdu,Refund Request,Resolved,4,2025-05-25 16:40:10,4:10,250
+CALL1118,+91-9876543327,2025-05-24 10:50:30,Hindi,Technical Support,Docket generated,2,2025-05-24 10:55:25,2:35,155
+CALL1119,+91-9876543328,2025-05-23 14:15:45,English,Billing Inquiry,Missing,0,,0:55,55
+CALL1120,+91-9876543329,2025-05-22 09:40:20,Bengali,Connection request,Resolved,3,2025-05-22 09:45:15,3:40,220
+CALL1121,+91-9876543330,2025-04-30 13:25:15,Telugu,Load shedding complaint,Docket generated,1,2025-04-30 13:30:10,1:20,80
+CALL1122,+91-9876543331,2025-04-29 11:40:30,Tamil,Transformer issue,Aborted,0,,0:35,35
+CALL1123,+91-9876543332,2025-04-28 15:55:45,Marathi,Service Outage Report,Resolved,5,2025-04-28 16:00:30,5:45,345
+CALL1124,+91-9876543333,2025-04-27 08:20:20,Gujarati,General Inquiry,Docket generated,2,2025-04-27 08:25:15,2:25,145
+CALL1125,+91-9876543334,2025-04-26 12:35:15,Kannada,Product Feedback,Missing,0,,1:10,70
+CALL1126,+91-9876543335,2025-04-25 16:50:30,Urdu,Complaint Resolution,Resolved,4,2025-04-25 16:55:25,4:35,275
+CALL1127,+91-9876543336,2025-04-24 10:15:45,Hindi,Account Recovery,Docket generated,3,2025-04-24 10:20:30,3:15,195
+CALL1128,+91-9876543337,2025-04-23 14:30:20,English,Feature Request,Docket under review,1,2025-04-23 14:35:15,1:50,110
+CALL1129,+91-9876543338,2025-04-22 09:45:15,Bengali,Subscription Cancellation,Resolved,2,2025-04-22 09:50:10,2:45,165
+CALL1130,+91-9876543339,2025-04-21 13:20:30,Telugu,Refund Request,Docket generated,5,2025-04-21 13:25:25,5:20,320
+CALL1131,+91-9876543340,2025-03-31 11:35:45,Tamil,Technical Support,Missing,0,,0:45,45
+CALL1132,+91-9876543341,2025-03-30 15:50:20,Marathi,Billing Inquiry,Resolved,3,2025-03-30 15:55:15,3:30,210
+CALL1133,+91-9876543342,2025-03-29 08:15:15,Gujarati,Connection request,Docket generated,1,2025-03-29 08:20:10,1:40,100
+CALL1134,+91-9876543343,2025-03-28 12:30:30,Kannada,Load shedding complaint,Aborted,0,,0:20,20
+CALL1135,+91-9876543344,2025-03-27 16:45:45,Urdu,Transformer issue,Resolved,4,2025-03-27 16:50:30,4:45,285
+CALL1136,+91-9876543345,2025-03-26 10:20:20,Hindi,Service Outage Report,Docket generated,2,2025-03-26 10:25:15,2:30,150
+CALL1137,+91-9876543346,2025-03-25 14:35:15,English,General Inquiry,Missing,0,,1:25,85
+CALL1138,+91-9876543347,2025-03-24 09:50:30,Bengali,Product Feedback,Resolved,5,2025-03-24 09:55:25,5:50,350
+CALL1139,+91-9876543348,2025-03-23 13:15:45,Telugu,Complaint Resolution,Docket generated,3,2025-03-23 13:20:30,3:20,200
+CALL1140,+91-9876543349,2025-03-22 11:40:20,Tamil,Account Recovery,Docket under review,1,2025-03-22 11:45:15,1:30,90
+CALL1141,+91-9876543350,2025-02-28 15:25:15,Marathi,Feature Request,Resolved,4,2025-02-28 15:30:10,4:15,255
+CALL1142,+91-9876543351,2025-02-27 08:50:30,Gujarati,Subscription Cancellation,Docket generated,2,2025-02-27 08:55:25,2:10,130
+CALL1143,+91-9876543352,2025-02-26 12:15:45,Kannada,Refund Request,Missing,0,,0:50,50
+CALL1144,+91-9876543353,2025-02-25 16:30:20,Urdu,Technical Support,Resolved,3,2025-02-25 16:35:15,3:45,225
+CALL1145,+91-9876543354,2025-02-24 10:45:15,Hindi,Billing Inquiry,Docket generated,1,2025-02-24 10:50:10,1:55,115
+CALL1146,+91-9876543355,2025-02-23 14:20:30,English,Connection request,Aborted,0,,0:40,40
+CALL1147,+91-9876543356,2025-02-22 09:35:45,Bengali,Load shedding complaint,Resolved,5,2025-02-22 09:40:30,5:25,325
+CALL1148,+91-9876543357,2025-02-21 13:50:20,Telugu,Transformer issue,Docket generated,2,2025-02-21 13:55:15,2:35,155
+CALL1149,+91-9876543358,2025-02-20 11:15:15,Tamil,Service Outage Report,Missing,0,,1:15,75
+CALL1150,+91-9876543359,2025-02-19 15:30:30,Marathi,General Inquiry,Resolved,4,2025-02-19 15:35:25,4:25,265
+CALL1151,+91-9876543360,2025-01-31 08:45:45,Gujarati,Product Feedback,Docket generated,3,2025-01-31 08:50:30,3:10,190
+CALL1152,+91-9876543361,2025-01-30 12:20:20,Kannada,Complaint Resolution,Docket under review,1,2025-01-30 12:25:15,1:35,95
+CALL1153,+91-9876543362,2025-01-29 16:35:15,Urdu,Account Recovery,Resolved,2,2025-01-29 16:40:10,2:20,140
+CALL1154,+91-9876543363,2025-01-28 10:50:30,Hindi,Feature Request,Docket generated,5,2025-01-28 10:55:25,5:30,330
+CALL1155,+91-9876543364,2025-01-27 14:15:45,English,Subscription Cancellation,Missing,0,,0:30,30
+CALL1156,+91-9876543365,2025-01-26 09:40:20,Bengali,Refund Request,Resolved,3,2025-01-26 09:45:15,3:35,215
+CALL1157,+91-9876543366,2025-01-25 13:25:15,Telugu,Technical Support,Docket generated,1,2025-01-25 13:30:10,1:45,105
+CALL1158,+91-9876543367,2025-01-24 11:40:30,Tamil,Billing Inquiry,Aborted,0,,0:25,25
+CALL1159,+91-9876543368,2025-01-23 15:55:45,Marathi,Connection request,Resolved,4,2025-01-23 16:00:30,4:40,280
+CALL1160,+91-9876543369,2025-01-22 08:20:20,Gujarati,Load shedding complaint,Docket generated,2,2025-01-22 08:25:15,2:15,135
+CALL1161,+91-9876543370,2025-01-21 12:35:15,Kannada,Transformer issue,Missing,0,,1:20,80
+CALL1162,+91-9876543371,2025-01-20 16:50:30,Urdu,Service Outage Report,Resolved,5,2025-01-20 16:55:25,5:40,340
+CALL1163,+91-9876543372,2025-01-19 10:15:45,Hindi,General Inquiry,Docket generated,3,2025-01-19 10:20:30,3:25,205
+CALL1164,+91-9876543373,2025-01-18 14:30:20,English,Product Feedback,Docket under review,1,2025-01-18 14:35:15,1:50,110
+CALL1165,+91-9876543374,2025-01-17 09:45:15,Bengali,Complaint Resolution,Resolved,4,2025-01-17 09:50:10,4:20,260
+CALL1166,+91-9876543375,2025-01-16 13:20:30,Telugu,Account Recovery,Docket generated,2,2025-01-16 13:25:25,2:40,160
+CALL1167,+91-9876543376,2025-01-15 11:35:45,Tamil,Feature Request,Missing,0,,0:55,55
+CALL1168,+91-9876543377,2025-01-14 15:50:20,Marathi,Subscription Cancellation,Resolved,3,2025-01-14 15:55:15,3:50,230
+CALL1169,+91-9876543378,2025-01-13 08:15:15,Gujarati,Refund Request,Docket generated,1,2025-01-13 08:20:10,1:25,85
+CALL1170,+91-9876543379,2025-01-12 12:30:30,Kannada,Technical Support,Aborted,0,,0:35,35
+CALL1171,+91-9876543380,2025-01-11 16:45:45,Urdu,Billing Inquiry,Resolved,5,2025-01-11 16:50:30,5:15,315
+CALL1172,+91-9876543381,2025-01-10 10:20:20,Hindi,Connection request,Docket generated,2,2025-01-10 10:25:15,2:25,145
+CALL1173,+91-9876543382,2025-01-09 14:35:15,English,Load shedding complaint,Missing,0,,1:10,70
+CALL1174,+91-9876543383,2025-01-08 09:50:30,Bengali,Transformer issue,Resolved,4,2025-01-08 09:55:25,4:35,275
+CALL1175,+91-9876543384,2025-01-07 13:15:45,Telugu,Service Outage Report,Docket generated,3,2025-01-07 13:20:30,3:15,195
+CALL1176,+91-9876543385,2025-01-06 11:40:20,Tamil,General Inquiry,Docket under review,1,2025-01-06 11:45:15,1:40,100
+CALL1177,+91-9876543386,2025-01-05 15:25:15,Marathi,Product Feedback,Resolved,2,2025-01-05 15:30:10,2:55,175
+CALL1178,+91-9876543387,2025-01-04 08:50:30,Gujarati,Complaint Resolution,Docket generated,5,2025-01-04 08:55:25,5:45,345
+CALL1179,+91-9876543388,2025-01-03 12:15:45,Kannada,Account Recovery,Missing,0,,0:45,45
+CALL1180,+91-9876543389,2025-01-02 16:30:20,Urdu,Feature Request,Resolved,3,2025-01-02 16:35:15,3:30,210
+CALL1181,+91-9876543390,2025-01-01 10:45:15,Hindi,Subscription Cancellation,Docket generated,1,2025-01-01 10:50:10,1:55,115

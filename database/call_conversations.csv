@@ -1,0 +1,121 @@
+message_id,call_id,message_type,message_content,timestamp,language,recognized
+MSG10001,CALL1001,bot,"Welcome to NPCL. Please say your preferred language",2025-09-30 09:30:18,DITM,TRUE
+MSG10002,CALL1001,user,Hindi,2025-09-30 09:30:35,Speech,TRUE
+MSG10003,CALL1001,bot,"Namaste! NPCL mein aapka swagat hai. Kripaya apni samasya batayiye",2025-09-30 09:30:40,Hindi,TRUE
+MSG10004,CALL1001,user,"Bijli ki samasya hai mere area mein",2025-09-30 09:31:15,Hindi,TRUE
+MSG10005,CALL1001,bot,"Main aapki samasya samajh gaya hun. Kya aap apna meter number bata sakte hain?",2025-09-30 09:31:20,Hindi,TRUE
+MSG10006,CALL1001,user,"Meter number 12345678",2025-09-30 09:31:45,Hindi,TRUE
+MSG10007,CALL1001,bot,"Dhanyawad. Main aapke liye ticket generate kar raha hun",2025-09-30 09:32:00,Hindi,TRUE
+MSG10008,CALL1001,bot,"Aapka ticket number 560193 hai. Technical team se sampark kiya ja raha hai",2025-09-30 09:32:30,Hindi,TRUE
+MSG10009,CALL1002,bot,"Welcome to NPCL. Please say your preferred language",2025-09-30 10:15:33,DITM,TRUE
+MSG10010,CALL1002,user,English,2025-09-30 10:15:50,Speech,TRUE
+MSG10011,CALL1002,bot,"Hello! Welcome to NPCL. How can I help you today?",2025-09-30 10:15:55,English,TRUE
+MSG10012,CALL1002,user,"I have a billing query regarding my electricity bill",2025-09-30 10:16:30,English,TRUE
+MSG10013,CALL1002,bot,"I understand you have a billing inquiry. Can you please provide your consumer number?",2025-09-30 10:16:35,English,TRUE
+MSG10014,CALL1002,user,"Consumer number is 87654321",2025-09-30 10:17:10,English,TRUE
+MSG10015,CALL1002,bot,"Thank you. I'm checking your account details and generating a ticket for billing team",2025-09-30 10:17:15,English,TRUE
+MSG10016,CALL1002,bot,"Your ticket number is 560195. Billing team will contact you within 24 hours",2025-09-30 10:18:00,English,TRUE
+MSG10017,CALL1003,bot,"Welcome to NPCL. Please say your preferred language",2025-09-30 11:45:13,DITM,TRUE
+MSG10018,CALL1003,user,Bengali,2025-09-30 11:45:30,Speech,TRUE
+MSG10019,CALL1003,bot,"Namaskar! NPCL-e apnake swagotom. Apnar ki sahajyo dorkar?",2025-09-30 11:45:35,Bengali,TRUE
+MSG10020,CALL1003,user,"Amar connection request ache",2025-09-30 11:46:10,Bengali,TRUE
+MSG10021,CALL1003,bot,"Ami bujhte parchi apnar connection request ache. Apnar address bolte paren?",2025-09-30 11:46:15,Bengali,TRUE
+MSG10022,CALL1003,user,"123 Park Street Kolkata",2025-09-30 11:46:50,Bengali,FALSE
+MSG10023,CALL1003,bot,"Dukkhito, ami apnar address sposhto bhabe shonte pai ni. Doya kore abar bolun",2025-09-30 11:46:55,Bengali,TRUE
+MSG10024,CALL1004,bot,"Welcome to NPCL. Please say your preferred language",2025-09-30 14:20:48,DITM,TRUE
+MSG10025,CALL1004,user,Telugu,2025-09-30 14:21:05,Speech,TRUE
+MSG10026,CALL1004,bot,"Namaskaram! NPCL ki meeru swaagatam. Meeku ela sahayam cheyagalam?",2025-09-30 14:21:10,Telugu,TRUE
+MSG10027,CALL1004,user,"Load shedding complaint undi",2025-09-30 14:21:45,Telugu,TRUE
+MSG10028,CALL1004,bot,"Nenu artham chesukunnanu meeku load shedding problem undi. Meeru call disconnect chesthunnaru",2025-09-30 14:22:00,Telugu,TRUE
+MSG10029,CALL1005,bot,"Welcome to NPCL. Please say your preferred language",2025-09-30 15:30:23,DITM,TRUE
+MSG10030,CALL1005,user,Tamil,2025-09-30 15:30:40,Speech,TRUE
+MSG10031,CALL1005,bot,"Vanakkam! NPCL-il ungalai varaverkirom. Ungalukku enna uthavi vendrum?",2025-09-30 15:30:45,Tamil,TRUE
+MSG10032,CALL1005,user,"Transformer problem irukku",2025-09-30 15:31:20,Tamil,TRUE
+MSG10033,CALL1005,bot,"Naan purinjukitten ungalukku transformer problem irukku. Ungal area enga?",2025-09-30 15:31:25,Tamil,TRUE
+MSG10034,CALL1005,user,"T Nagar Chennai",2025-09-30 15:32:00,Tamil,TRUE
+MSG10035,CALL1005,bot,"Nandri. Naan ungalukku ticket generate panren",2025-09-30 15:32:15,Tamil,TRUE
+MSG10036,CALL1005,bot,"Ungal ticket number 560196, 560197, 560198. Technical team contact pannuvanga",2025-09-30 15:33:30,Tamil,TRUE
+MSG10037,CALL1006,bot,"Welcome to NPCL. Please say your preferred language",2025-09-29 08:15:33,DITM,TRUE
+MSG10038,CALL1006,user,Marathi,2025-09-29 08:15:50,Speech,TRUE
+MSG10039,CALL1006,bot,"Namaskar! NPCL madhe tumcha swagat aahe. Tumhala kay madad lagel?",2025-09-29 08:15:55,Marathi,TRUE
+MSG10040,CALL1006,user,"Service outage report karaycha aahe",2025-09-29 08:16:30,Marathi,TRUE
+MSG10041,CALL1006,bot,"Mala samajle tumhala service outage report karaycha aahe. Tumcha area konata?",2025-09-29 08:16:35,Marathi,TRUE
+MSG10042,CALL1006,user,"Pune Cantonment",2025-09-29 08:17:10,Marathi,TRUE
+MSG10043,CALL1006,bot,"Dhanyawad. Tumchyasathi ticket tayar karto",2025-09-29 08:17:25,Marathi,TRUE
+MSG10044,CALL1006,bot,"Tumcha ticket number 560199 ani 560200 aahe",2025-09-29 08:18:45,Marathi,TRUE
+MSG10045,CALL1007,bot,"Welcome to NPCL. Please say your preferred language",2025-09-29 12:30:48,DITM,TRUE
+MSG10046,CALL1007,user,Gujarati,2025-09-29 12:31:05,Speech,TRUE
+MSG10047,CALL1007,bot,"Namaste! NPCL ma tamara swagat chhe. Tamne shu madad joi chhe?",2025-09-29 12:31:10,Gujarati,TRUE
+MSG10048,CALL1007,user,"General inquiry chhe",2025-09-29 12:31:45,Gujarati,TRUE
+MSG10049,CALL1007,bot,"Hu samju chhu tamne general inquiry chhe. Tamara prashn shu chhe?",2025-09-29 12:31:50,Gujarati,TRUE
+MSG10050,CALL1007,user,"Bill payment ni process ke chhe?",2025-09-29 12:32:25,Gujarati,TRUE
+MSG10051,CALL1007,bot,"Tamara mate ticket generate karu chhu",2025-09-29 12:32:40,Gujarati,TRUE
+MSG10052,CALL1007,bot,"Tamaro ticket number 560201 chhe",2025-09-29 12:33:55,Gujarati,TRUE
+MSG10053,CALL1008,bot,"Welcome to NPCL. Please say your preferred language",2025-09-29 16:45:23,DITM,TRUE
+MSG10054,CALL1008,user,Kannada,2025-09-29 16:45:40,Speech,TRUE
+MSG10055,CALL1008,bot,"Namaskara! NPCL ge nimma swagata. Nimge enu sahaya beku?",2025-09-29 16:45:45,Kannada,TRUE
+MSG10056,CALL1008,user,"Product feedback kodabeku",2025-09-29 16:46:20,Kannada,TRUE
+MSG10057,CALL1008,bot,"Nanu tilkonde nimge product feedback kodabeku. Nimma feedback enu?",2025-09-29 16:46:25,Kannada,TRUE
+MSG10058,CALL1008,user,"Service thumba chennagide but billing process improve madabeku",2025-09-29 16:47:00,Kannada,TRUE
+MSG10059,CALL1008,bot,"Dhanyawadagalu. Nimma feedback ge ticket generate madtini",2025-09-29 16:47:15,Kannada,TRUE
+MSG10060,CALL1008,bot,"Nimma ticket numbers 560202, 560203, 560204, 560205",2025-09-29 16:48:30,Kannada,TRUE
+MSG10061,CALL1009,bot,"Welcome to NPCL. Please say your preferred language",2025-09-28 09:20:18,DITM,TRUE
+MSG10062,CALL1009,user,Urdu,2025-09-28 09:20:35,Speech,TRUE
+MSG10063,CALL1009,bot,"Assalam-o-Alaikum! NPCL mein aapka khush amdeed. Aap ki kya madad kar sakta hun?",2025-09-28 09:20:40,Urdu,TRUE
+MSG10064,CALL1009,user,"Complaint resolution chahiye",2025-09-28 09:21:15,Urdu,TRUE
+MSG10065,CALL1009,bot,"Main samjha aapko complaint resolution chahiye. Aapki complaint kya hai?",2025-09-28 09:21:20,Urdu,TRUE
+MSG10066,CALL1009,user,"Pichle mahine se billing problem hai",2025-09-28 09:21:55,Urdu,TRUE
+MSG10067,CALL1009,bot,"Shukriya. Main aapke liye multiple tickets banata hun",2025-09-28 09:22:10,Urdu,TRUE
+MSG10068,CALL1009,bot,"Aapke ticket numbers 560206, 560207, 560208, 560209, 560210 hain",2025-09-28 09:23:25,Urdu,TRUE
+MSG10069,CALL1010,bot,"Welcome to NPCL. Please say your preferred language",2025-09-28 13:40:28,DITM,TRUE
+MSG10070,CALL1010,user,Hindi,2025-09-28 13:40:45,Speech,TRUE
+MSG10071,CALL1010,bot,"Namaste! NPCL mein aapka swagat hai. Kripaya apni samasya batayiye",2025-09-28 13:40:50,Hindi,TRUE
+MSG10072,CALL1010,user,"Account recovery ki zarurat hai",2025-09-28 13:41:25,Hindi,TRUE
+MSG10073,CALL1010,bot,"Main samjha aapko account recovery chahiye. Aapka consumer number kya hai?",2025-09-28 13:41:30,Hindi,TRUE
+MSG10074,CALL1010,user,"Consumer number 11223344",2025-09-28 13:42:05,Hindi,TRUE
+MSG10075,CALL1010,bot,"Dhanyawad. Main aapke liye ticket generate kar raha hun",2025-09-28 13:42:20,Hindi,TRUE
+MSG10076,CALL1010,bot,"Aapka ticket number 560211 aur 560212 hai",2025-09-28 13:43:35,Hindi,TRUE
+MSG10077,CALL1011,bot,"Welcome to NPCL. Please say your preferred language",2025-09-27 10:15:33,DITM,TRUE
+MSG10078,CALL1011,user,English,2025-09-27 10:15:50,Speech,TRUE
+MSG10079,CALL1011,bot,"Hello! Welcome to NPCL. How can I help you today?",2025-09-27 10:15:55,English,TRUE
+MSG10080,CALL1011,user,"I want to request a new feature",2025-09-27 10:16:30,English,TRUE
+MSG10081,CALL1011,bot,"I understand you want to request a new feature. Can you describe the feature?",2025-09-27 10:16:35,English,TRUE
+MSG10082,CALL1011,user,"Mobile app for bill payment would be helpful",2025-09-27 10:17:10,English,FALSE
+MSG10083,CALL1011,bot,"I'm sorry, I couldn't understand clearly. Could you please repeat?",2025-09-27 10:17:15,English,TRUE
+MSG10084,CALL1012,bot,"Welcome to NPCL. Please say your preferred language",2025-09-27 14:30:48,DITM,TRUE
+MSG10085,CALL1012,user,Bengali,2025-09-27 14:31:05,Speech,TRUE
+MSG10086,CALL1012,bot,"Namaskar! NPCL-e apnake swagotom. Apnar ki sahajyo dorkar?",2025-09-27 14:31:10,Bengali,TRUE
+MSG10087,CALL1012,user,"Subscription cancel korte chai",2025-09-27 14:31:45,Bengali,TRUE
+MSG10088,CALL1012,bot,"Ami bujhte parchi apni subscription cancel korte chan. Apnar consumer number bolte paren?",2025-09-27 14:31:50,Bengali,TRUE
+MSG10089,CALL1012,user,"Consumer number 55667788",2025-09-27 14:32:25,Bengali,TRUE
+MSG10090,CALL1012,bot,"Dhanyabad. Apnar jonno ticket toiri korchi",2025-09-27 14:32:40,Bengali,TRUE
+MSG10091,CALL1012,bot,"Apnar ticket number 560213, 560214, 560215",2025-09-27 14:33:55,Bengali,TRUE
+MSG10092,CALL1013,bot,"Welcome to NPCL. Please say your preferred language",2025-09-26 11:20:18,DITM,TRUE
+MSG10093,CALL1013,user,Telugu,2025-09-26 11:20:35,Speech,TRUE
+MSG10094,CALL1013,bot,"Namaskaram! NPCL ki meeru swaagatam. Meeku ela sahayam cheyagalam?",2025-09-26 11:20:40,Telugu,TRUE
+MSG10095,CALL1013,user,"Refund request cheyali",2025-09-26 11:21:15,Telugu,TRUE
+MSG10096,CALL1013,bot,"Nenu artham chesukunnanu meeku refund request cheyali. Meeru ela refund kavali?",2025-09-26 11:21:20,Telugu,TRUE
+MSG10097,CALL1013,user,"Extra amount charge chesaru last month",2025-09-26 11:21:55,Telugu,TRUE
+MSG10098,CALL1013,bot,"Nandri. Mee kosam ticket generate chesthunanu",2025-09-26 11:22:10,Telugu,TRUE
+MSG10099,CALL1013,bot,"Mee ticket number 560216 mariyu 560217",2025-09-26 11:23:25,Telugu,TRUE
+MSG10100,CALL1014,bot,"Welcome to NPCL. Please say your preferred language",2025-09-26 15:45:33,DITM,TRUE
+MSG10101,CALL1014,user,Tamil,2025-09-26 15:45:50,Speech,TRUE
+MSG10102,CALL1014,bot,"Vanakkam! NPCL-il ungalai varaverkirom. Ungalukku enna uthavi vendrum?",2025-09-26 15:45:55,Tamil,TRUE
+MSG10103,CALL1014,user,"Technical support venum",2025-09-26 15:46:30,Tamil,FALSE
+MSG10104,CALL1014,bot,"Mannikkavum, naan ungal vaarthaigalai thelivaga ketka mudiyavillai",2025-09-26 15:46:35,Tamil,TRUE
+MSG10105,CALL1015,bot,"Welcome to NPCL. Please say your preferred language",2025-09-25 09:30:48,DITM,TRUE
+MSG10106,CALL1015,user,Marathi,2025-09-25 09:31:05,Speech,TRUE
+MSG10107,CALL1015,bot,"Namaskar! NPCL madhe tumcha swagat aahe. Tumhala kay madad lagel?",2025-09-25 09:31:10,Marathi,TRUE
+MSG10108,CALL1015,user,"Billing inquiry aahe",2025-09-25 09:31:45,Marathi,TRUE
+MSG10109,CALL1015,bot,"Mala samajle tumhala billing inquiry aahe. Tumcha consumer number sangta?",2025-09-25 09:31:50,Marathi,TRUE
+MSG10110,CALL1015,user,"Consumer number 99887766",2025-09-25 09:32:25,Marathi,TRUE
+MSG10111,CALL1015,bot,"Dhanyawad. Tumchyasathi ticket tayar karto",2025-09-25 09:32:40,Marathi,TRUE
+MSG10112,CALL1015,bot,"Tumcha ticket number 560218 aahe",2025-09-25 09:33:55,Marathi,TRUE
+MSG10113,CALL1016,bot,"Welcome to NPCL. Please say your preferred language",2025-09-25 13:15:23,DITM,TRUE
+MSG10114,CALL1016,user,Gujarati,2025-09-25 13:15:40,Speech,TRUE
+MSG10115,CALL1016,bot,"Namaste! NPCL ma tamara swagat chhe. Tamne shu madad joi chhe?",2025-09-25 13:15:45,Gujarati,TRUE
+MSG10116,CALL1016,user,"Connection request karvu chhe",2025-09-25 13:16:20,Gujarati,TRUE
+MSG10117,CALL1016,bot,"Hu samju chhu tamne connection request karvu chhe. Tamaro address shu chhe?",2025-09-25 13:16:25,Gujarati,TRUE
+MSG10118,CALL1016,user,"Satellite Ahmedabad",2025-09-25 13:17:00,Gujarati,TRUE
+MSG10119,CALL1016,bot,"Dhanyawad. Tamara mate multiple tickets generate karu chhu",2025-09-25 13:17:15,Gujarati,TRUE
+MSG10120,CALL1016,bot,"Tamara ticket numbers 560219, 560220, 560221, 560222 chhe",2025-09-25 13:18:30,Gujarati,TRUE

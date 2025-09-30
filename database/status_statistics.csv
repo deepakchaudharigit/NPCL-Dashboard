@@ -1,0 +1,505 @@
+date,status,count
+2025-09-30,Docket generated,4
+2025-09-30,Transferred to Agent,2
+2025-09-30,Docket follow-up,4
+2025-09-30,Missing,1
+2025-09-30,Aborted,6
+2025-09-30,Resolved,9
+2025-09-30,Reopened,3
+2025-09-30,Under Review,5
+2025-09-29,Docket generated,3
+2025-09-29,Transferred to Agent,2
+2025-09-29,Docket follow-up,3
+2025-09-29,Missing,2
+2025-09-29,Aborted,5
+2025-09-29,Resolved,8
+2025-09-29,Reopened,2
+2025-09-29,Under Review,4
+2025-09-28,Docket generated,4
+2025-09-28,Transferred to Agent,1
+2025-09-28,Docket follow-up,3
+2025-09-28,Missing,1
+2025-09-28,Aborted,4
+2025-09-28,Resolved,7
+2025-09-28,Reopened,3
+2025-09-28,Under Review,5
+2025-09-27,Docket generated,3
+2025-09-27,Transferred to Agent,2
+2025-09-27,Docket follow-up,4
+2025-09-27,Missing,2
+2025-09-27,Aborted,5
+2025-09-27,Resolved,6
+2025-09-27,Reopened,2
+2025-09-27,Under Review,4
+2025-09-26,Docket generated,3
+2025-09-26,Transferred to Agent,1
+2025-09-26,Docket follow-up,3
+2025-09-26,Missing,2
+2025-09-26,Aborted,4
+2025-09-26,Resolved,7
+2025-09-26,Reopened,3
+2025-09-26,Under Review,4
+2025-09-25,Docket generated,4
+2025-09-25,Transferred to Agent,2
+2025-09-25,Docket follow-up,3
+2025-09-25,Missing,1
+2025-09-25,Aborted,5
+2025-09-25,Resolved,8
+2025-09-25,Reopened,2
+2025-09-25,Under Review,5
+2025-09-24,Docket generated,3
+2025-09-24,Transferred to Agent,2
+2025-09-24,Docket follow-up,4
+2025-09-24,Missing,2
+2025-09-24,Aborted,4
+2025-09-24,Resolved,6
+2025-09-24,Reopened,3
+2025-09-24,Under Review,4
+2025-09-23,Docket generated,3
+2025-09-23,Transferred to Agent,1
+2025-09-23,Docket follow-up,3
+2025-09-23,Missing,2
+2025-09-23,Aborted,5
+2025-09-23,Resolved,7
+2025-09-23,Reopened,2
+2025-09-23,Under Review,4
+2025-09-22,Docket generated,4
+2025-09-22,Transferred to Agent,2
+2025-09-22,Docket follow-up,3
+2025-09-22,Missing,1
+2025-09-22,Aborted,4
+2025-09-22,Resolved,8
+2025-09-22,Reopened,3
+2025-09-22,Under Review,5
+2025-09-21,Docket generated,3
+2025-09-21,Transferred to Agent,1
+2025-09-21,Docket follow-up,3
+2025-09-21,Missing,2
+2025-09-21,Aborted,5
+2025-09-21,Resolved,6
+2025-09-21,Reopened,2
+2025-09-21,Under Review,4
+2025-09-20,Docket generated,4
+2025-09-20,Transferred to Agent,2
+2025-09-20,Docket follow-up,3
+2025-09-20,Missing,1
+2025-09-20,Aborted,4
+2025-09-20,Resolved,8
+2025-09-20,Reopened,3
+2025-09-20,Under Review,5
+2025-09-19,Docket generated,3
+2025-09-19,Transferred to Agent,1
+2025-09-19,Docket follow-up,2
+2025-09-19,Missing,2
+2025-09-19,Aborted,5
+2025-09-19,Resolved,6
+2025-09-19,Reopened,2
+2025-09-19,Under Review,3
+2025-09-18,Docket generated,3
+2025-09-18,Transferred to Agent,2
+2025-09-18,Docket follow-up,4
+2025-09-18,Missing,2
+2025-09-18,Aborted,4
+2025-09-18,Resolved,7
+2025-09-18,Reopened,3
+2025-09-18,Under Review,4
+2025-09-17,Docket generated,3
+2025-09-17,Transferred to Agent,1
+2025-09-17,Docket follow-up,3
+2025-09-17,Missing,2
+2025-09-17,Aborted,5
+2025-09-17,Resolved,6
+2025-09-17,Reopened,2
+2025-09-17,Under Review,4
+2025-09-16,Docket generated,4
+2025-09-16,Transferred to Agent,2
+2025-09-16,Docket follow-up,3
+2025-09-16,Missing,1
+2025-09-16,Aborted,4
+2025-09-16,Resolved,8
+2025-09-16,Reopened,3
+2025-09-16,Under Review,5
+2025-09-15,Docket generated,3
+2025-09-15,Transferred to Agent,1
+2025-09-15,Docket follow-up,3
+2025-09-15,Missing,2
+2025-09-15,Aborted,5
+2025-09-15,Resolved,6
+2025-09-15,Reopened,2
+2025-09-15,Under Review,4
+2025-09-14,Docket generated,3
+2025-09-14,Transferred to Agent,2
+2025-09-14,Docket follow-up,4
+2025-09-14,Missing,2
+2025-09-14,Aborted,4
+2025-09-14,Resolved,7
+2025-09-14,Reopened,3
+2025-09-14,Under Review,4
+2025-09-13,Docket generated,3
+2025-09-13,Transferred to Agent,1
+2025-09-13,Docket follow-up,3
+2025-09-13,Missing,2
+2025-09-13,Aborted,5
+2025-09-13,Resolved,6
+2025-09-13,Reopened,2
+2025-09-13,Under Review,4
+2025-09-12,Docket generated,4
+2025-09-12,Transferred to Agent,2
+2025-09-12,Docket follow-up,3
+2025-09-12,Missing,1
+2025-09-12,Aborted,4
+2025-09-12,Resolved,8
+2025-09-12,Reopened,3
+2025-09-12,Under Review,5
+2025-09-11,Docket generated,3
+2025-09-11,Transferred to Agent,1
+2025-09-11,Docket follow-up,3
+2025-09-11,Missing,2
+2025-09-11,Aborted,5
+2025-09-11,Resolved,6
+2025-09-11,Reopened,2
+2025-09-11,Under Review,4
+2025-09-10,Docket generated,3
+2025-09-10,Transferred to Agent,2
+2025-09-10,Docket follow-up,4
+2025-09-10,Missing,2
+2025-09-10,Aborted,4
+2025-09-10,Resolved,7
+2025-09-10,Reopened,3
+2025-09-10,Under Review,4
+2025-09-09,Docket generated,3
+2025-09-09,Transferred to Agent,1
+2025-09-09,Docket follow-up,3
+2025-09-09,Missing,2
+2025-09-09,Aborted,5
+2025-09-09,Resolved,6
+2025-09-09,Reopened,2
+2025-09-09,Under Review,4
+2025-09-08,Docket generated,4
+2025-09-08,Transferred to Agent,2
+2025-09-08,Docket follow-up,3
+2025-09-08,Missing,1
+2025-09-08,Aborted,4
+2025-09-08,Resolved,8
+2025-09-08,Reopened,3
+2025-09-08,Under Review,5
+2025-09-07,Docket generated,3
+2025-09-07,Transferred to Agent,1
+2025-09-07,Docket follow-up,3
+2025-09-07,Missing,2
+2025-09-07,Aborted,5
+2025-09-07,Resolved,6
+2025-09-07,Reopened,2
+2025-09-07,Under Review,4
+2025-09-06,Docket generated,3
+2025-09-06,Transferred to Agent,2
+2025-09-06,Docket follow-up,4
+2025-09-06,Missing,2
+2025-09-06,Aborted,4
+2025-09-06,Resolved,7
+2025-09-06,Reopened,3
+2025-09-06,Under Review,4
+2025-09-05,Docket generated,3
+2025-09-05,Transferred to Agent,1
+2025-09-05,Docket follow-up,3
+2025-09-05,Missing,2
+2025-09-05,Aborted,5
+2025-09-05,Resolved,6
+2025-09-05,Reopened,2
+2025-09-05,Under Review,4
+2025-09-04,Docket generated,4
+2025-09-04,Transferred to Agent,2
+2025-09-04,Docket follow-up,3
+2025-09-04,Missing,1
+2025-09-04,Aborted,4
+2025-09-04,Resolved,8
+2025-09-04,Reopened,3
+2025-09-04,Under Review,5
+2025-09-03,Docket generated,3
+2025-09-03,Transferred to Agent,1
+2025-09-03,Docket follow-up,3
+2025-09-03,Missing,2
+2025-09-03,Aborted,5
+2025-09-03,Resolved,6
+2025-09-03,Reopened,2
+2025-09-03,Under Review,4
+2025-09-02,Docket generated,3
+2025-09-02,Transferred to Agent,2
+2025-09-02,Docket follow-up,4
+2025-09-02,Missing,2
+2025-09-02,Aborted,4
+2025-09-02,Resolved,7
+2025-09-02,Reopened,3
+2025-09-02,Under Review,4
+2025-09-01,Docket generated,3
+2025-09-01,Transferred to Agent,1
+2025-09-01,Docket follow-up,3
+2025-09-01,Missing,2
+2025-09-01,Aborted,5
+2025-09-01,Resolved,6
+2025-09-01,Reopened,2
+2025-09-01,Under Review,4
+2025-08-31,Docket generated,3
+2025-08-31,Transferred to Agent,2
+2025-08-31,Docket follow-up,3
+2025-08-31,Missing,2
+2025-08-31,Aborted,4
+2025-08-31,Resolved,7
+2025-08-31,Reopened,2
+2025-08-31,Under Review,4
+2025-08-30,Docket generated,3
+2025-08-30,Transferred to Agent,1
+2025-08-30,Docket follow-up,3
+2025-08-30,Missing,2
+2025-08-30,Aborted,5
+2025-08-30,Resolved,6
+2025-08-30,Reopened,2
+2025-08-30,Under Review,4
+2025-08-29,Docket generated,3
+2025-08-29,Transferred to Agent,2
+2025-08-29,Docket follow-up,3
+2025-08-29,Missing,2
+2025-08-29,Aborted,4
+2025-08-29,Resolved,7
+2025-08-29,Reopened,2
+2025-08-29,Under Review,4
+2025-08-28,Docket generated,3
+2025-08-28,Transferred to Agent,1
+2025-08-28,Docket follow-up,3
+2025-08-28,Missing,2
+2025-08-28,Aborted,5
+2025-08-28,Resolved,6
+2025-08-28,Reopened,2
+2025-08-28,Under Review,4
+2025-08-27,Docket generated,3
+2025-08-27,Transferred to Agent,2
+2025-08-27,Docket follow-up,3
+2025-08-27,Missing,2
+2025-08-27,Aborted,4
+2025-08-27,Resolved,7
+2025-08-27,Reopened,2
+2025-08-27,Under Review,4
+2025-08-26,Docket generated,3
+2025-08-26,Transferred to Agent,1
+2025-08-26,Docket follow-up,3
+2025-08-26,Missing,2
+2025-08-26,Aborted,5
+2025-08-26,Resolved,6
+2025-08-26,Reopened,2
+2025-08-26,Under Review,4
+2025-08-25,Docket generated,3
+2025-08-25,Transferred to Agent,2
+2025-08-25,Docket follow-up,3
+2025-08-25,Missing,2
+2025-08-25,Aborted,4
+2025-08-25,Resolved,7
+2025-08-25,Reopened,2
+2025-08-25,Under Review,4
+2025-08-24,Docket generated,3
+2025-08-24,Transferred to Agent,1
+2025-08-24,Docket follow-up,3
+2025-08-24,Missing,2
+2025-08-24,Aborted,5
+2025-08-24,Resolved,6
+2025-08-24,Reopened,2
+2025-08-24,Under Review,4
+2025-08-23,Docket generated,3
+2025-08-23,Transferred to Agent,2
+2025-08-23,Docket follow-up,3
+2025-08-23,Missing,2
+2025-08-23,Aborted,4
+2025-08-23,Resolved,7
+2025-08-23,Reopened,2
+2025-08-23,Under Review,4
+2025-08-22,Docket generated,3
+2025-08-22,Transferred to Agent,1
+2025-08-22,Docket follow-up,3
+2025-08-22,Missing,2
+2025-08-22,Aborted,5
+2025-08-22,Resolved,6
+2025-08-22,Reopened,2
+2025-08-22,Under Review,4
+2025-08-21,Docket generated,3
+2025-08-21,Transferred to Agent,2
+2025-08-21,Docket follow-up,3
+2025-08-21,Missing,2
+2025-08-21,Aborted,4
+2025-08-21,Resolved,7
+2025-08-21,Reopened,2
+2025-08-21,Under Review,4
+2025-08-20,Docket generated,3
+2025-08-20,Transferred to Agent,1
+2025-08-20,Docket follow-up,3
+2025-08-20,Missing,2
+2025-08-20,Aborted,5
+2025-08-20,Resolved,6
+2025-08-20,Reopened,2
+2025-08-20,Under Review,4
+2025-08-19,Docket generated,3
+2025-08-19,Transferred to Agent,2
+2025-08-19,Docket follow-up,3
+2025-08-19,Missing,2
+2025-08-19,Aborted,4
+2025-08-19,Resolved,7
+2025-08-19,Reopened,2
+2025-08-19,Under Review,4
+2025-08-18,Docket generated,3
+2025-08-18,Transferred to Agent,1
+2025-08-18,Docket follow-up,3
+2025-08-18,Missing,2
+2025-08-18,Aborted,5
+2025-08-18,Resolved,6
+2025-08-18,Reopened,2
+2025-08-18,Under Review,4
+2025-08-17,Docket generated,3
+2025-08-17,Transferred to Agent,2
+2025-08-17,Docket follow-up,3
+2025-08-17,Missing,2
+2025-08-17,Aborted,4
+2025-08-17,Resolved,7
+2025-08-17,Reopened,2
+2025-08-17,Under Review,4
+2025-08-16,Docket generated,3
+2025-08-16,Transferred to Agent,1
+2025-08-16,Docket follow-up,3
+2025-08-16,Missing,2
+2025-08-16,Aborted,5
+2025-08-16,Resolved,6
+2025-08-16,Reopened,2
+2025-08-16,Under Review,4
+2025-08-15,Docket generated,3
+2025-08-15,Transferred to Agent,2
+2025-08-15,Docket follow-up,3
+2025-08-15,Missing,2
+2025-08-15,Aborted,4
+2025-08-15,Resolved,7
+2025-08-15,Reopened,2
+2025-08-15,Under Review,4
+2025-08-14,Docket generated,3
+2025-08-14,Transferred to Agent,1
+2025-08-14,Docket follow-up,3
+2025-08-14,Missing,2
+2025-08-14,Aborted,5
+2025-08-14,Resolved,6
+2025-08-14,Reopened,2
+2025-08-14,Under Review,4
+2025-08-13,Docket generated,3
+2025-08-13,Transferred to Agent,2
+2025-08-13,Docket follow-up,3
+2025-08-13,Missing,2
+2025-08-13,Aborted,4
+2025-08-13,Resolved,7
+2025-08-13,Reopened,2
+2025-08-13,Under Review,4
+2025-08-12,Docket generated,3
+2025-08-12,Transferred to Agent,1
+2025-08-12,Docket follow-up,3
+2025-08-12,Missing,2
+2025-08-12,Aborted,5
+2025-08-12,Resolved,6
+2025-08-12,Reopened,2
+2025-08-12,Under Review,4
+2025-08-11,Docket generated,3
+2025-08-11,Transferred to Agent,2
+2025-08-11,Docket follow-up,3
+2025-08-11,Missing,2
+2025-08-11,Aborted,4
+2025-08-11,Resolved,7
+2025-08-11,Reopened,2
+2025-08-11,Under Review,4
+2025-08-10,Docket generated,3
+2025-08-10,Transferred to Agent,1
+2025-08-10,Docket follow-up,3
+2025-08-10,Missing,2
+2025-08-10,Aborted,5
+2025-08-10,Resolved,6
+2025-08-10,Reopened,2
+2025-08-10,Under Review,4
+2025-08-09,Docket generated,3
+2025-08-09,Transferred to Agent,2
+2025-08-09,Docket follow-up,3
+2025-08-09,Missing,2
+2025-08-09,Aborted,4
+2025-08-09,Resolved,7
+2025-08-09,Reopened,2
+2025-08-09,Under Review,4
+2025-08-08,Docket generated,3
+2025-08-08,Transferred to Agent,1
+2025-08-08,Docket follow-up,3
+2025-08-08,Missing,2
+2025-08-08,Aborted,5
+2025-08-08,Resolved,6
+2025-08-08,Reopened,2
+2025-08-08,Under Review,4
+2025-08-07,Docket generated,3
+2025-08-07,Transferred to Agent,2
+2025-08-07,Docket follow-up,3
+2025-08-07,Missing,2
+2025-08-07,Aborted,4
+2025-08-07,Resolved,7
+2025-08-07,Reopened,2
+2025-08-07,Under Review,4
+2025-08-06,Docket generated,3
+2025-08-06,Transferred to Agent,1
+2025-08-06,Docket follow-up,3
+2025-08-06,Missing,2
+2025-08-06,Aborted,5
+2025-08-06,Resolved,6
+2025-08-06,Reopened,2
+2025-08-06,Under Review,4
+2025-08-05,Docket generated,3
+2025-08-05,Transferred to Agent,2
+2025-08-05,Docket follow-up,3
+2025-08-05,Missing,2
+2025-08-05,Aborted,4
+2025-08-05,Resolved,7
+2025-08-05,Reopened,2
+2025-08-05,Under Review,4
+2025-08-04,Docket generated,3
+2025-08-04,Transferred to Agent,1
+2025-08-04,Docket follow-up,3
+2025-08-04,Missing,2
+2025-08-04,Aborted,5
+2025-08-04,Resolved,6
+2025-08-04,Reopened,2
+2025-08-04,Under Review,4
+2025-08-03,Docket generated,3
+2025-08-03,Transferred to Agent,2
+2025-08-03,Docket follow-up,3
+2025-08-03,Missing,2
+2025-08-03,Aborted,4
+2025-08-03,Resolved,7
+2025-08-03,Reopened,2
+2025-08-03,Under Review,4
+2025-08-02,Docket generated,3
+2025-08-02,Transferred to Agent,1
+2025-08-02,Docket follow-up,3
+2025-08-02,Missing,2
+2025-08-02,Aborted,5
+2025-08-02,Resolved,6
+2025-08-02,Reopened,2
+2025-08-02,Under Review,4
+2025-08-01,Docket generated,3
+2025-08-01,Transferred to Agent,2
+2025-08-01,Docket follow-up,3
+2025-08-01,Missing,2
+2025-08-01,Aborted,4
+2025-08-01,Resolved,7
+2025-08-01,Reopened,2
+2025-08-01,Under Review,4
+2025-07-31,Docket generated,3
+2025-07-31,Transferred to Agent,1
+2025-07-31,Docket follow-up,3
+2025-07-31,Missing,2
+2025-07-31,Aborted,5
+2025-07-31,Resolved,6
+2025-07-31,Reopened,2
+2025-07-31,Under Review,4
+2025-07-30,Docket generated,3
+2025-07-30,Transferred to Agent,2
+2025-07-30,Docket follow-up,3
+2025-07-30,Missing,2
+2025-07-30,Aborted,4
+2025-07-30,Resolved,7
+2025-07-30,Reopened,2
+2025-07-30,Under Review,4

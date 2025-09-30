@@ -1,0 +1,151 @@
+history_id,customer_id,cli,call_datetime,description,status,duration,resolution
+HIST1001,CUST5001,+91-9876543210,2025-09-29 14:20:10,Follow-up on previous power outage complaint,Docket generated,3:00,Complaint resolved
+HIST1002,CUST5001,+91-9876543210,2025-09-28 08:35:22,Voltage fluctuation reported,Documents filed,1:23,Documents submitted
+HIST1003,CUST5002,+91-9876543211,2025-09-27 16:45:15,Billing discrepancy inquiry,Resolved,2:15,Amount adjusted
+HIST1004,CUST5002,+91-9876543211,2025-09-26 11:20:30,Payment confirmation request,Completed,1:45,Payment verified
+HIST1005,CUST5003,+91-9876543212,2025-09-25 09:15:45,New connection application status,In progress,2:30,Application under review
+HIST1006,CUST5003,+91-9876543212,2025-09-24 14:30:20,Documentation submission,Received,1:10,Documents verified
+HIST1007,CUST5004,+91-9876543213,2025-09-23 12:45:30,Load shedding schedule inquiry,Informed,0:55,Schedule provided
+HIST1008,CUST5004,+91-9876543213,2025-09-22 17:20:15,Transformer maintenance update,Completed,1:35,Maintenance done
+HIST1009,CUST5005,+91-9876543214,2025-09-21 10:30:45,Meter reading discrepancy,Resolved,3:20,Reading corrected
+HIST1010,CUST5005,+91-9876543214,2025-09-20 15:15:20,Service restoration request,Completed,2:45,Service restored
+HIST1011,CUST5006,+91-9876543215,2025-09-19 08:45:15,Bill payment method change,Updated,1:20,Method updated
+HIST1012,CUST5006,+91-9876543215,2025-09-18 13:30:40,Auto-debit setup request,Activated,2:10,Auto-debit enabled
+HIST1013,CUST5007,+91-9876543216,2025-09-17 11:25:30,Power quality complaint,Investigated,4:15,Issue identified
+HIST1014,CUST5007,+91-9876543216,2025-09-16 16:40:25,Follow-up on power quality,Resolved,2:35,Problem fixed
+HIST1015,CUST5008,+91-9876543217,2025-09-15 09:20:15,Connection transfer request,Processed,3:45,Transfer completed
+HIST1016,CUST5008,+91-9876543217,2025-09-14 14:55:30,Address change notification,Updated,1:50,Address updated
+HIST1017,CUST5009,+91-9876543218,2025-09-13 12:10:45,Complaint about billing cycle,Resolved,2:25,Cycle adjusted
+HIST1018,CUST5009,+91-9876543218,2025-09-12 17:35:20,Duplicate bill inquiry,Clarified,1:40,Duplicate removed
+HIST1019,CUST5010,+91-9876543219,2025-09-11 10:45:15,Emergency service request,Completed,5:30,Emergency resolved
+HIST1020,CUST5010,+91-9876543219,2025-09-10 15:20:30,Service quality feedback,Recorded,2:15,Feedback noted
+HIST1021,CUST5011,+91-9876543220,2025-09-09 08:30:45,Meter replacement request,Scheduled,3:10,Replacement planned
+HIST1022,CUST5011,+91-9876543220,2025-09-08 13:45:20,Pre-replacement inspection,Completed,1:55,Inspection done
+HIST1023,CUST5012,+91-9876543221,2025-09-07 11:15:15,Tariff plan inquiry,Explained,2:40,Plan details provided
+HIST1024,CUST5012,+91-9876543221,2025-09-06 16:30:40,Plan change request,Processed,3:25,Plan changed
+HIST1025,CUST5013,+91-9876543222,2025-09-05 09:50:25,Connection disconnection notice,Resolved,4:20,Payment made
+HIST1026,CUST5013,+91-9876543222,2025-09-04 14:25:15,Reconnection request,Completed,2:50,Service restored
+HIST1027,CUST5014,+91-9876543223,2025-09-03 12:40:30,Billing format change request,Updated,1:30,Format changed
+HIST1028,CUST5014,+91-9876543223,2025-09-02 17:15:45,Email notification setup,Activated,2:05,Notifications enabled
+HIST1029,CUST5015,+91-9876543224,2025-09-01 10:20:20,Load enhancement request,Under review,3:55,Application submitted
+HIST1030,CUST5015,+91-9876543224,2025-08-31 15:35:15,Technical feasibility check,Completed,2:30,Feasibility confirmed
+HIST1031,CUST5016,+91-9876543225,2025-08-30 08:45:30,Seasonal billing inquiry,Explained,1:45,Seasonal rates clarified
+HIST1032,CUST5016,+91-9876543225,2025-08-29 13:20:45,Previous bill correction,Processed,3:15,Correction applied
+HIST1033,CUST5017,+91-9876543226,2025-08-28 11:30:20,Service interruption report,Acknowledged,2:20,Interruption logged
+HIST1034,CUST5017,+91-9876543226,2025-08-27 16:45:15,Compensation claim request,Under review,4:10,Claim processing
+HIST1035,CUST5018,+91-9876543227,2025-08-26 09:15:40,Multiple connection inquiry,Explained,2:55,Process explained
+HIST1036,CUST5018,+91-9876543227,2025-08-25 14:30:25,Second connection application,Submitted,3:40,Application received
+HIST1037,CUST5019,+91-9876543228,2025-08-24 12:50:15,Solar panel integration query,Consulted,5:25,Guidelines provided
+HIST1038,CUST5019,+91-9876543228,2025-08-23 17:25:30,Net metering application,In progress,3:20,Application processing
+HIST1039,CUST5020,+91-9876543229,2025-08-22 10:40:45,Complaint about meter accuracy,Investigated,4:35,Meter tested
+HIST1040,CUST5020,+91-9876543229,2025-08-21 15:15:20,Meter calibration request,Scheduled,2:45,Calibration planned
+HIST1041,CUST5021,+91-9876543230,2025-08-20 08:25:15,Bill payment extension request,Granted,1:55,Extension approved
+HIST1042,CUST5021,+91-9876543230,2025-08-19 13:40:30,Payment plan setup,Activated,3:10,Plan established
+HIST1043,CUST5022,+91-9876543231,2025-08-18 11:55:45,Service upgrade inquiry,Explained,2:35,Upgrade options provided
+HIST1044,CUST5022,+91-9876543231,2025-08-17 16:20:20,Upgrade application submission,Received,3:50,Application logged
+HIST1045,CUST5023,+91-9876543232,2025-08-16 09:35:15,Temporary disconnection request,Processed,2:15,Disconnection scheduled
+HIST1046,CUST5023,+91-9876543232,2025-08-15 14:50:30,Reconnection after vacation,Completed,1:40,Service restored
+HIST1047,CUST5024,+91-9876543233,2025-08-14 12:15:45,Energy audit request,Scheduled,4:25,Audit planned
+HIST1048,CUST5024,+91-9876543233,2025-08-13 17:30:20,Audit report discussion,Completed,3:15,Report explained
+HIST1049,CUST5025,+91-9876543234,2025-08-12 10:45:15,High bill complaint,Investigated,5:40,Usage analyzed
+HIST1050,CUST5025,+91-9876543234,2025-08-11 15:20:40,Usage pattern analysis,Completed,2:50,Analysis provided
+HIST1051,CUST5026,+91-9876543235,2025-08-10 08:35:25,Connection name change,Updated,1:25,Name changed
+HIST1052,CUST5026,+91-9876543235,2025-08-09 13:50:15,Ownership transfer process,Explained,3:35,Process clarified
+HIST1053,CUST5027,+91-9876543236,2025-08-08 11:25:30,Complaint about voltage fluctuation,Resolved,4:20,Stabilizer installed
+HIST1054,CUST5027,+91-9876543236,2025-08-07 16:40:45,Follow-up on voltage issue,Completed,2:30,Issue resolved
+HIST1055,CUST5028,+91-9876543237,2025-08-06 09:15:20,Bill delivery method change,Updated,1:50,Method changed
+HIST1056,CUST5028,+91-9876543237,2025-08-05 14:30:15,Digital bill setup,Activated,2:25,Digital bills enabled
+HIST1057,CUST5029,+91-9876543238,2025-08-04 12:45:30,Load calculation request,Processed,3:45,Calculation provided
+HIST1058,CUST5029,+91-9876543238,2025-08-03 17:20:45,Load modification application,Submitted,4:10,Application received
+HIST1059,CUST5030,+91-9876543239,2025-08-02 10:35:20,Security deposit inquiry,Explained,2:15,Deposit details provided
+HIST1060,CUST5030,+91-9876543239,2025-08-01 15:50:15,Deposit refund request,Processed,3:20,Refund initiated
+HIST1061,CUST5031,+91-9876543240,2025-07-31 08:25:30,Complaint about frequent outages,Logged,4:55,Complaint registered
+HIST1062,CUST5031,+91-9876543240,2025-07-30 13:40:45,Outage compensation claim,Under review,3:30,Claim submitted
+HIST1063,CUST5032,+91-9876543241,2025-07-29 11:15:20,Meter reading submission,Accepted,1:35,Reading recorded
+HIST1064,CUST5032,+91-9876543241,2025-07-28 16:30:15,Self-reading process inquiry,Explained,2:40,Process clarified
+HIST1065,CUST5033,+91-9876543242,2025-07-27 09:45:30,Connection category change,Processed,3:25,Category updated
+HIST1066,CUST5033,+91-9876543242,2025-07-26 14:20:45,Commercial rate inquiry,Explained,2:55,Rates provided
+HIST1067,CUST5034,+91-9876543243,2025-07-25 12:35:20,Complaint about billing error,Resolved,4:15,Error corrected
+HIST1068,CUST5034,+91-9876543243,2025-07-24 17:50:15,Revised bill generation,Completed,2:20,New bill issued
+HIST1069,CUST5035,+91-9876543244,2025-07-23 10:25:30,Service quality complaint,Investigated,5:10,Quality improved
+HIST1070,CUST5035,+91-9876543244,2025-07-22 15:40:45,Follow-up on service quality,Resolved,3:45,Issue resolved
+HIST1071,CUST5036,+91-9876543245,2025-07-21 08:55:20,Emergency contact update,Updated,1:20,Contact updated
+HIST1072,CUST5036,+91-9876543245,2025-07-20 14:10:15,Notification preferences setup,Configured,2:35,Preferences set
+HIST1073,CUST5037,+91-9876543246,2025-07-19 12:25:30,Complaint about meter tampering,Investigated,4:40,Investigation completed
+HIST1074,CUST5037,+91-9876543246,2025-07-18 17:40:45,Meter security enhancement,Implemented,3:15,Security improved
+HIST1075,CUST5038,+91-9876543247,2025-07-17 09:15:20,Connection load verification,Verified,2:50,Load confirmed
+HIST1076,CUST5038,+91-9876543247,2025-07-16 14:30:15,Load certificate request,Issued,1:45,Certificate provided
+HIST1077,CUST5039,+91-9876543248,2025-07-15 11:45:30,Billing cycle change request,Updated,3:20,Cycle changed
+HIST1078,CUST5039,+91-9876543248,2025-07-14 16:20:45,New billing schedule confirmation,Confirmed,2:10,Schedule confirmed
+HIST1079,CUST5040,+91-9876543249,2025-07-13 10:35:20,Complaint about power quality,Resolved,4:25,Quality improved
+HIST1080,CUST5040,+91-9876543249,2025-07-12 15:50:15,Power factor correction,Completed,3:35,Correction done
+HIST1081,CUST5041,+91-9876543250,2025-07-11 08:25:30,Service connection inspection,Completed,2:45,Inspection passed
+HIST1082,CUST5041,+91-9876543250,2025-07-10 13:40:45,Connection approval notification,Approved,1:55,Approval granted
+HIST1083,CUST5042,+91-9876543251,2025-07-09 11:15:20,Complaint about delayed connection,Resolved,4:10,Connection expedited
+HIST1084,CUST5042,+91-9876543251,2025-07-08 16:30:15,Connection status update,Provided,2:25,Status updated
+HIST1085,CUST5043,+91-9876543252,2025-07-07 09:45:30,Rural connection inquiry,Explained,3:50,Process explained
+HIST1086,CUST5043,+91-9876543252,2025-07-06 14:20:45,Rural scheme application,Submitted,4:15,Application received
+HIST1087,CUST5044,+91-9876543253,2025-07-05 12:35:20,Complaint about transformer noise,Investigated,3:25,Noise reduced
+HIST1088,CUST5044,+91-9876543253,2025-07-04 17:50:15,Transformer maintenance request,Scheduled,2:40,Maintenance planned
+HIST1089,CUST5045,+91-9876543254,2025-07-03 10:25:30,Bill format customization,Updated,1:35,Format customized
+HIST1090,CUST5045,+91-9876543254,2025-07-02 15:40:45,Digital services enrollment,Completed,2:50,Services activated
+HIST1091,CUST5046,+91-9876543255,2025-07-01 08:55:20,Connection relocation request,Processed,4:30,Relocation approved
+HIST1092,CUST5046,+91-9876543255,2025-06-30 14:10:15,Relocation cost estimate,Provided,3:15,Estimate given
+HIST1093,CUST5047,+91-9876543256,2025-06-29 12:25:30,Complaint about billing frequency,Resolved,2:20,Frequency adjusted
+HIST1094,CUST5047,+91-9876543256,2025-06-28 17:40:45,Monthly billing setup,Activated,1:45,Monthly billing enabled
+HIST1095,CUST5048,+91-9876543257,2025-06-27 09:15:20,Service upgrade consultation,Provided,4:55,Consultation completed
+HIST1096,CUST5048,+91-9876543257,2025-06-26 14:30:15,Upgrade implementation plan,Prepared,3:40,Plan ready
+HIST1097,CUST5049,+91-9876543258,2025-06-25 11:45:30,Complaint about meter location,Resolved,3:10,Location changed
+HIST1098,CUST5049,+91-9876543258,2025-06-24 16:20:45,Meter relocation completion,Completed,2:35,Relocation done
+HIST1099,CUST5050,+91-9876543259,2025-06-23 10:35:20,Energy conservation inquiry,Explained,2:55,Tips provided
+HIST1100,CUST5050,+91-9876543259,2025-06-22 15:50:15,Conservation program enrollment,Enrolled,1:40,Program joined
+HIST1101,CUST5051,+91-9876543260,2025-06-21 08:25:30,Complaint about estimated billing,Resolved,4:20,Actual reading taken
+HIST1102,CUST5051,+91-9876543260,2025-06-20 13:40:45,Meter accessibility improvement,Completed,3:25,Access improved
+HIST1103,CUST5052,+91-9876543261,2025-06-19 11:15:20,Connection capacity inquiry,Explained,2:45,Capacity details provided
+HIST1104,CUST5052,+91-9876543261,2025-06-18 16:30:15,Capacity enhancement request,Submitted,4:10,Request received
+HIST1105,CUST5053,+91-9876543262,2025-06-17 09:45:30,Complaint about service interruption,Resolved,3:35,Service restored
+HIST1106,CUST5053,+91-9876543262,2025-06-16 14:20:45,Interruption compensation,Processed,2:20,Compensation given
+HIST1107,CUST5054,+91-9876543263,2025-06-15 12:35:20,Tariff structure inquiry,Explained,3:15,Structure clarified
+HIST1108,CUST5054,+91-9876543263,2025-06-14 17:50:15,Optimal tariff recommendation,Provided,2:50,Recommendation given
+HIST1109,CUST5055,+91-9876543264,2025-06-13 10:25:30,Complaint about connection delay,Resolved,4:45,Connection expedited
+HIST1110,CUST5055,+91-9876543264,2025-06-12 15:40:45,Connection timeline update,Provided,2:15,Timeline updated
+HIST1111,CUST5056,+91-9876543265,2025-06-11 08:55:20,Service quality assessment,Completed,3:30,Assessment done
+HIST1112,CUST5056,+91-9876543265,2025-06-10 14:10:15,Quality improvement plan,Implemented,4:25,Plan executed
+HIST1113,CUST5057,+91-9876543266,2025-06-09 12:25:30,Complaint about voltage variation,Resolved,3:55,Voltage stabilized
+HIST1114,CUST5057,+91-9876543266,2025-06-08 17:40:45,Voltage monitoring setup,Installed,2:40,Monitoring active
+HIST1115,CUST5058,+91-9876543267,2025-06-07 09:15:20,Bill payment reminder setup,Configured,1:50,Reminders enabled
+HIST1116,CUST5058,+91-9876543267,2025-06-06 14:30:15,Auto-payment enrollment,Activated,2:25,Auto-payment enabled
+HIST1117,CUST5059,+91-9876543268,2025-06-05 11:45:30,Connection documentation update,Updated,3:20,Documents updated
+HIST1118,CUST5059,+91-9876543268,2025-06-04 16:20:45,Document verification completion,Verified,2:10,Verification done
+HIST1119,CUST5060,+91-9876543269,2025-06-03 10:35:20,Complaint about meter reading error,Corrected,4:15,Error corrected
+HIST1120,CUST5060,+91-9876543269,2025-06-02 15:50:15,Corrected bill generation,Issued,2:55,New bill issued
+HIST1121,CUST5061,+91-9876543270,2025-06-01 08:25:30,Service transfer inquiry,Explained,3:40,Process explained
+HIST1122,CUST5061,+91-9876543270,2025-05-31 13:40:45,Transfer application submission,Received,4:05,Application logged
+HIST1123,CUST5062,+91-9876543271,2025-05-30 11:15:20,Complaint about connection quality,Investigated,3:25,Quality improved
+HIST1124,CUST5062,+91-9876543271,2025-05-29 16:30:15,Quality enhancement completion,Completed,2:35,Enhancement done
+HIST1125,CUST5063,+91-9876543272,2025-05-28 09:45:30,Load balancing request,Processed,4:30,Balancing completed
+HIST1126,CUST5063,+91-9876543272,2025-05-27 14:20:45,Load distribution optimization,Optimized,3:15,Distribution improved
+HIST1127,CUST5064,+91-9876543273,2025-05-26 12:35:20,Complaint about billing discrepancy,Resolved,2:45,Discrepancy corrected
+HIST1128,CUST5064,+91-9876543273,2025-05-25 17:50:15,Account reconciliation,Completed,3:50,Account balanced
+HIST1129,CUST5065,+91-9876543274,2025-05-24 10:25:30,Connection safety inspection,Passed,2:20,Safety confirmed
+HIST1130,CUST5065,+91-9876543274,2025-05-23 15:40:45,Safety compliance certificate,Issued,1:35,Certificate provided
+HIST1131,CUST5066,+91-9876543275,2025-05-22 08:55:20,Complaint about service reliability,Addressed,4:40,Reliability improved
+HIST1132,CUST5066,+91-9876543275,2025-05-21 14:10:15,Reliability enhancement plan,Implemented,3:25,Plan executed
+HIST1133,CUST5067,+91-9876543276,2025-05-20 12:25:30,Connection modification request,Approved,3:10,Modification approved
+HIST1134,CUST5067,+91-9876543276,2025-05-19 17:40:45,Modification implementation,Completed,4:20,Modification done
+HIST1135,CUST5068,+91-9876543277,2025-05-18 09:15:20,Service restoration priority,Upgraded,2:55,Priority increased
+HIST1136,CUST5068,+91-9876543277,2025-05-17 14:30:15,Priority service activation,Activated,1:45,Service activated
+HIST1137,CUST5069,+91-9876543278,2025-05-16 11:45:30,Complaint about connection stability,Resolved,4:35,Stability improved
+HIST1138,CUST5069,+91-9876543278,2025-05-15 16:20:45,Stability monitoring setup,Installed,3:20,Monitoring active
+HIST1139,CUST5070,+91-9876543279,2025-05-14 10:35:20,Energy efficiency consultation,Provided,3:45,Consultation completed
+HIST1140,CUST5070,+91-9876543279,2025-05-13 15:50:15,Efficiency improvement plan,Prepared,2:30,Plan ready
+HIST1141,CUST5071,+91-9876543280,2025-05-12 08:25:30,Complaint about power factor,Corrected,4:25,Factor corrected
+HIST1142,CUST5071,+91-9876543280,2025-05-11 13:40:45,Power factor monitoring,Implemented,3:15,Monitoring active
+HIST1143,CUST5072,+91-9876543281,2025-05-10 11:15:20,Connection load assessment,Completed,2:40,Assessment done
+HIST1144,CUST5072,+91-9876543281,2025-05-09 16:30:15,Load optimization recommendation,Provided,3:55,Recommendation given
+HIST1145,CUST5073,+91-9876543282,2025-05-08 09:45:30,Service upgrade feasibility,Confirmed,4:10,Feasibility confirmed
+HIST1146,CUST5073,+91-9876543282,2025-05-07 14:20:45,Upgrade project initiation,Started,3:30,Project initiated
+HIST1147,CUST5074,+91-9876543283,2025-05-06 12:35:20,Complaint about meter accuracy,Verified,2:25,Accuracy confirmed
+HIST1148,CUST5074,+91-9876543283,2025-05-05 17:50:15,Meter calibration service,Completed,1:50,Calibration done
+HIST1149,CUST5075,+91-9876543284,2025-05-04 10:25:30,Connection backup request,Processed,4:45,Backup arranged
+HIST1150,CUST5075,+91-9876543284,2025-05-03 15:40:45,Backup system activation,Activated,3:20,System active

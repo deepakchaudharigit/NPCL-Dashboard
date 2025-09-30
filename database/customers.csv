@@ -1,0 +1,151 @@
+customer_id,name,phone,email,address,city,area,pincode,registration_date
+CUST5001,Rajesh Kumar,+91-9876543210,rajesh.kumar@example.com,"123 Main Street, Mumbai Central, Mumbai - 400001",Mumbai,Mumbai Central,400001,2023-05-15
+CUST5002,Priya Sharma,+91-9876543211,priya.sharma@example.com,"456 MG Road, Pune, Pune - 411001",Pune,Pune,411001,2022-08-20
+CUST5003,Amit Patel,+91-9876543212,amit.patel@example.com,"789 Station Road, Nagpur, Nagpur - 440001",Nagpur,Nagpur,440001,2023-01-10
+CUST5004,Sunita Reddy,+91-9876543213,sunita.reddy@example.com,"321 Park Street, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2022-11-25
+CUST5005,Vikram Singh,+91-9876543214,vikram.singh@example.com,"654 Mall Road, Chennai, Chennai - 600001",Chennai,Chennai,600001,2023-03-08
+CUST5006,Meera Joshi,+91-9876543215,meera.joshi@example.com,"987 Ring Road, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-12-12
+CUST5007,Ravi Gupta,+91-9876543216,ravi.gupta@example.com,"147 Civil Lines, Kolkata, Kolkata - 700001",Kolkata,Kolkata,700001,2023-02-18
+CUST5008,Kavita Nair,+91-9876543217,kavita.nair@example.com,"258 Beach Road, Kochi, Kochi - 682001",Kochi,Kochi,682001,2022-09-30
+CUST5009,Deepak Yadav,+91-9876543218,deepak.yadav@example.com,"369 University Road, Lucknow, Lucknow - 226001",Lucknow,Lucknow,226001,2023-04-22
+CUST5010,Anita Desai,+91-9876543219,anita.desai@example.com,"741 Market Street, Jaipur, Jaipur - 302001",Jaipur,Jaipur,302001,2022-07-14
+CUST5011,Suresh Chandra,+91-9876543220,suresh.chandra@example.com,"852 Gandhi Road, Bhopal, Bhopal - 462001",Bhopal,Bhopal,462001,2023-06-05
+CUST5012,Pooja Agarwal,+91-9876543221,pooja.agarwal@example.com,"963 Nehru Place, Delhi, Delhi - 110001",Delhi,Delhi,110001,2022-10-17
+CUST5013,Manoj Tiwari,+91-9876543222,manoj.tiwari@example.com,"159 Cantonment, Pune, Pune - 411002",Pune,Pune Cantonment,411002,2023-01-28
+CUST5014,Rekha Pillai,+91-9876543223,rekha.pillai@example.com,"357 Fort Area, Mumbai, Mumbai - 400002",Mumbai,Mumbai Fort,400002,2022-08-11
+CUST5015,Ashok Verma,+91-9876543224,ashok.verma@example.com,"468 Sector 15, Noida, Noida - 201301",Noida,Noida Sector 15,201301,2023-05-03
+CUST5016,Geeta Malhotra,+91-9876543225,geeta.malhotra@example.com,"579 Model Town, Ludhiana, Ludhiana - 141001",Ludhiana,Model Town,141001,2022-12-08
+CUST5017,Ramesh Iyer,+91-9876543226,ramesh.iyer@example.com,"680 T Nagar, Chennai, Chennai - 600017",Chennai,T Nagar,600017,2023-03-21
+CUST5018,Sushma Kapoor,+91-9876543227,sushma.kapoor@example.com,"791 Lajpat Nagar, Delhi, Delhi - 110024",Delhi,Lajpat Nagar,110024,2022-11-02
+CUST5019,Vinod Khanna,+91-9876543228,vinod.khanna@example.com,"802 Satellite, Ahmedabad, Ahmedabad - 380015",Ahmedabad,Satellite,380015,2023-04-16
+CUST5020,Neha Sinha,+91-9876543229,neha.sinha@example.com,"913 Salt Lake, Kolkata, Kolkata - 700064",Kolkata,Salt Lake,700064,2022-09-25
+CUST5021,Kiran Bose,+91-9876543230,kiran.bose@example.com,"124 Park Circus, Kolkata, Kolkata - 700017",Kolkata,Park Circus,700017,2023-02-14
+CUST5022,Ajay Mishra,+91-9876543231,ajay.mishra@example.com,"235 Hazratganj, Lucknow, Lucknow - 226001",Lucknow,Hazratganj,226001,2022-07-29
+CUST5023,Shilpa Rao,+91-9876543232,shilpa.rao@example.com,"346 Koramangala, Bangalore, Bangalore - 560034",Bangalore,Koramangala,560034,2023-06-12
+CUST5024,Harish Pandey,+91-9876543233,harish.pandey@example.com,"457 Gomti Nagar, Lucknow, Lucknow - 226010",Lucknow,Gomti Nagar,226010,2022-10-06
+CUST5025,Madhuri Dixit,+91-9876543234,madhuri.dixit@example.com,"568 Bandra West, Mumbai, Mumbai - 400050",Mumbai,Bandra West,400050,2023-01-19
+CUST5026,Rohit Sharma,+91-9876543235,rohit.sharma@example.com,"679 Sector 17, Chandigarh, Chandigarh - 160017",Chandigarh,Sector 17,160017,2022-08-23
+CUST5027,Priyanka Chopra,+91-9876543236,priyanka.chopra@example.com,"780 Juhu, Mumbai, Mumbai - 400049",Mumbai,Juhu,400049,2023-05-07
+CUST5028,Sachin Tendulkar,+91-9876543237,sachin.tendulkar@example.com,"891 Bandra East, Mumbai, Mumbai - 400051",Mumbai,Bandra East,400051,2022-12-21
+CUST5029,Aishwarya Rai,+91-9876543238,aishwarya.rai@example.com,"902 Versova, Mumbai, Mumbai - 400061",Mumbai,Versova,400061,2023-03-15
+CUST5030,Shah Rukh Khan,+91-9876543239,shahrukh.khan@example.com,"013 Mannat, Mumbai, Mumbai - 400050",Mumbai,Bandstand,400050,2022-11-09
+CUST5031,Deepika Padukone,+91-9876543240,deepika.padukone@example.com,"124 Prabhadevi, Mumbai, Mumbai - 400025",Mumbai,Prabhadevi,400025,2023-04-02
+CUST5032,Aamir Khan,+91-9876543241,aamir.khan@example.com,"235 Pali Hill, Mumbai, Mumbai - 400050",Mumbai,Pali Hill,400050,2022-09-18
+CUST5033,Katrina Kaif,+91-9876543242,katrina.kaif@example.com,"346 Lokhandwala, Mumbai, Mumbai - 400053",Mumbai,Lokhandwala,400053,2023-02-26
+CUST5034,Salman Khan,+91-9876543243,salman.khan@example.com,"457 Galaxy Apartments, Mumbai, Mumbai - 400050",Mumbai,Bandra West,400050,2022-07-13
+CUST5035,Kareena Kapoor,+91-9876543244,kareena.kapoor@example.com,"568 Fortune Heights, Mumbai, Mumbai - 400050",Mumbai,Bandra West,400050,2023-06-28
+CUST5036,Akshay Kumar,+91-9876543245,akshay.kumar@example.com,"679 Prime Beach, Mumbai, Mumbai - 400049",Mumbai,Juhu,400049,2022-10-14
+CUST5037,Hrithik Roshan,+91-9876543246,hrithik.roshan@example.com,"780 Palazzo, Mumbai, Mumbai - 400049",Mumbai,Juhu,400049,2023-01-31
+CUST5038,Ranbir Kapoor,+91-9876543247,ranbir.kapoor@example.com,"891 Vastu, Mumbai, Mumbai - 400050",Mumbai,Pali Hill,400050,2022-08-17
+CUST5039,Alia Bhatt,+91-9876543248,alia.bhatt@example.com,"902 Cooke Town, Bangalore, Bangalore - 560005",Bangalore,Cooke Town,560005,2023-05-24
+CUST5040,Ranveer Singh,+91-9876543249,ranveer.singh@example.com,"013 Goregaon West, Mumbai, Mumbai - 400062",Mumbai,Goregaon West,400062,2022-12-10
+CUST5041,Anushka Sharma,+91-9876543250,anushka.sharma@example.com,"124 Versova, Mumbai, Mumbai - 400061",Mumbai,Versova,400061,2023-03-27
+CUST5042,Virat Kohli,+91-9876543251,virat.kohli@example.com,"235 Worli, Mumbai, Mumbai - 400018",Mumbai,Worli,400018,2022-11-13
+CUST5043,MS Dhoni,+91-9876543252,ms.dhoni@example.com,"346 Ring Road, Ranchi, Ranchi - 834001",Ranchi,Ring Road,834001,2023-04-08
+CUST5044,Rohit Sharma,+91-9876543253,rohit.sharma2@example.com,"457 Borivali West, Mumbai, Mumbai - 400092",Mumbai,Borivali West,400092,2022-09-24
+CUST5045,Hardik Pandya,+91-9876543254,hardik.pandya@example.com,"568 Khar West, Mumbai, Mumbai - 400052",Mumbai,Khar West,400052,2023-02-15
+CUST5046,KL Rahul,+91-9876543255,kl.rahul@example.com,"679 Mangalore, Mangalore, Mangalore - 575001",Mangalore,Mangalore,575001,2022-07-01
+CUST5047,Jasprit Bumrah,+91-9876543256,jasprit.bumrah@example.com,"780 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2023-06-17
+CUST5048,Shikhar Dhawan,+91-9876543257,shikhar.dhawan@example.com,"891 Punjabi Bagh, Delhi, Delhi - 110026",Delhi,Punjabi Bagh,110026,2022-10-03
+CUST5049,Rishabh Pant,+91-9876543258,rishabh.pant@example.com,"902 Roorkee, Roorkee, Roorkee - 247667",Roorkee,Roorkee,247667,2023-01-20
+CUST5050,Yuzvendra Chahal,+91-9876543259,yuzvendra.chahal@example.com,"013 Jind, Jind, Jind - 126102",Jind,Jind,126102,2022-08-06
+CUST5051,Mohammed Shami,+91-9876543260,mohammed.shami@example.com,"124 Amroha, Amroha, Amroha - 244221",Amroha,Amroha,244221,2023-05-13
+CUST5052,Bhuvneshwar Kumar,+91-9876543261,bhuvneshwar.kumar@example.com,"235 Meerut, Meerut, Meerut - 250001",Meerut,Meerut,250001,2022-12-29
+CUST5053,Ravindra Jadeja,+91-9876543262,ravindra.jadeja@example.com,"346 Jamnagar, Jamnagar, Jamnagar - 361001",Jamnagar,Jamnagar,361001,2023-03-16
+CUST5054,Kuldeep Yadav,+91-9876543263,kuldeep.yadav@example.com,"457 Kanpur, Kanpur, Kanpur - 208001",Kanpur,Kanpur,208001,2022-11-01
+CUST5055,Washington Sundar,+91-9876543264,washington.sundar@example.com,"568 Chennai, Chennai, Chennai - 600001",Chennai,Chennai,600001,2023-04-18
+CUST5056,Axar Patel,+91-9876543265,axar.patel@example.com,"679 Anand, Anand, Anand - 388001",Anand,Anand,388001,2022-09-04
+CUST5057,Ishan Kishan,+91-9876543266,ishan.kishan@example.com,"780 Patna, Patna, Patna - 800001",Patna,Patna,800001,2023-02-21
+CUST5058,Suryakumar Yadav,+91-9876543267,suryakumar.yadav@example.com,"891 Mumbai, Mumbai, Mumbai - 400001",Mumbai,Mumbai Central,400001,2022-07-07
+CUST5059,Shreyas Iyer,+91-9876543268,shreyas.iyer@example.com,"902 Mumbai, Mumbai, Mumbai - 400050",Mumbai,Bandra West,400050,2023-06-23
+CUST5060,Sanju Samson,+91-9876543269,sanju.samson@example.com,"013 Trivandrum, Trivandrum, Trivandrum - 695001",Trivandrum,Trivandrum,695001,2022-10-09
+CUST5061,Prithvi Shaw,+91-9876543270,prithvi.shaw@example.com,"124 Mumbai, Mumbai, Mumbai - 400077",Mumbai,Virar,400077,2023-01-25
+CUST5062,Devdutt Padikkal,+91-9876543271,devdutt.padikkal@example.com,"235 Bangalore, Bangalore, Bangalore - 560001",Bangalore,Bangalore,560001,2022-08-11
+CUST5063,Ruturaj Gaikwad,+91-9876543272,ruturaj.gaikwad@example.com,"346 Pune, Pune, Pune - 411001",Pune,Pune,411001,2023-05-28
+CUST5064,Shubman Gill,+91-9876543273,shubman.gill@example.com,"457 Mohali, Mohali, Mohali - 140301",Mohali,Mohali,140301,2022-12-14
+CUST5065,Mayank Agarwal,+91-9876543274,mayank.agarwal@example.com,"568 Bangalore, Bangalore, Bangalore - 560034",Bangalore,Koramangala,560034,2023-03-30
+CUST5066,Cheteshwar Pujara,+91-9876543275,cheteshwar.pujara@example.com,"679 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2022-11-15
+CUST5067,Ajinkya Rahane,+91-9876543276,ajinkya.rahane@example.com,"780 Mumbai, Mumbai, Mumbai - 400614",Mumbai,Mulund,400614,2023-04-12
+CUST5068,Hanuma Vihari,+91-9876543277,hanuma.vihari@example.com,"891 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2022-09-28
+CUST5069,Wriddhiman Saha,+91-9876543278,wriddhiman.saha@example.com,"902 Kolkata, Kolkata, Kolkata - 700001",Kolkata,Kolkata,700001,2023-02-13
+CUST5070,Umesh Yadav,+91-9876543279,umesh.yadav@example.com,"013 Nagpur, Nagpur, Nagpur - 440001",Nagpur,Nagpur,440001,2022-07-30
+CUST5071,Ishant Sharma,+91-9876543280,ishant.sharma@example.com,"124 Delhi, Delhi, Delhi - 110001",Delhi,Delhi,110001,2023-06-15
+CUST5072,Mohammed Siraj,+91-9876543281,mohammed.siraj@example.com,"235 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2022-10-31
+CUST5073,Shardul Thakur,+91-9876543282,shardul.thakur@example.com,"346 Mumbai, Mumbai, Mumbai - 400614",Mumbai,Mulund,400614,2023-01-17
+CUST5074,Navdeep Saini,+91-9876543283,navdeep.saini@example.com,"457 Delhi, Delhi, Delhi - 110001",Delhi,Delhi,110001,2022-08-03
+CUST5075,T Natarajan,+91-9876543284,t.natarajan@example.com,"568 Salem, Salem, Salem - 636001",Salem,Salem,636001,2023-05-20
+CUST5076,Deepak Chahar,+91-9876543285,deepak.chahar@example.com,"679 Agra, Agra, Agra - 282001",Agra,Agra,282001,2022-12-05
+CUST5077,Prasidh Krishna,+91-9876543286,prasidh.krishna@example.com,"780 Bangalore, Bangalore, Bangalore - 560001",Bangalore,Bangalore,560001,2023-03-22
+CUST5078,Arshdeep Singh,+91-9876543287,arshdeep.singh@example.com,"891 Chandigarh, Chandigarh, Chandigarh - 160001",Chandigarh,Chandigarh,160001,2022-11-07
+CUST5079,Avesh Khan,+91-9876543288,avesh.khan@example.com,"902 Indore, Indore, Indore - 452001",Indore,Indore,452001,2023-04-24
+CUST5080,Harshal Patel,+91-9876543289,harshal.patel@example.com,"013 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-09-10
+CUST5081,Venkatesh Iyer,+91-9876543290,venkatesh.iyer@example.com,"124 Indore, Indore, Indore - 452001",Indore,Indore,452001,2023-02-25
+CUST5082,Deepak Hooda,+91-9876543291,deepak.hooda@example.com,"235 Rohtak, Rohtak, Rohtak - 124001",Rohtak,Rohtak,124001,2022-07-12
+CUST5083,Krunal Pandya,+91-9876543292,krunal.pandya@example.com,"346 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2023-06-29
+CUST5084,Rahul Chahar,+91-9876543293,rahul.chahar@example.com,"457 Mumbai, Mumbai, Mumbai - 400001",Mumbai,Mumbai Central,400001,2022-10-15
+CUST5085,Ravi Bishnoi,+91-9876543294,ravi.bishnoi@example.com,"568 Jodhpur, Jodhpur, Jodhpur - 342001",Jodhpur,Jodhpur,342001,2023-01-01
+CUST5086,Varun Chakravarthy,+91-9876543295,varun.chakravarthy@example.com,"679 Chennai, Chennai, Chennai - 600001",Chennai,Chennai,600001,2022-08-18
+CUST5087,Rahul Tewatia,+91-9876543296,rahul.tewatia@example.com,"780 Faridabad, Faridabad, Faridabad - 121001",Faridabad,Faridabad,121001,2023-05-04
+CUST5088,Nitish Rana,+91-9876543297,nitish.rana@example.com,"891 Delhi, Delhi, Delhi - 110001",Delhi,Delhi,110001,2022-12-20
+CUST5089,Dinesh Karthik,+91-9876543298,dinesh.karthik@example.com,"902 Chennai, Chennai, Chennai - 600001",Chennai,Chennai,600001,2023-03-07
+CUST5090,Robin Uthappa,+91-9876543299,robin.uthappa@example.com,"013 Bangalore, Bangalore, Bangalore - 560001",Bangalore,Bangalore,560001,2022-11-23
+CUST5091,Manish Pandey,+91-9876543300,manish.pandey@example.com,"124 Nainital, Nainital, Nainital - 263001",Nainital,Nainital,263001,2023-04-09
+CUST5092,Kedar Jadhav,+91-9876543301,kedar.jadhav@example.com,"235 Pune, Pune, Pune - 411001",Pune,Pune,411001,2022-09-25
+CUST5093,Ambati Rayudu,+91-9876543302,ambati.rayudu@example.com,"346 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2023-02-11
+CUST5094,Vijay Shankar,+91-9876543303,vijay.shankar@example.com,"457 Chennai, Chennai, Chennai - 600001",Chennai,Chennai,600001,2022-07-28
+CUST5095,Shivam Dube,+91-9876543304,shivam.dube@example.com,"568 Mumbai, Mumbai, Mumbai - 400001",Mumbai,Mumbai Central,400001,2023-06-14
+CUST5096,Riyan Parag,+91-9876543305,riyan.parag@example.com,"679 Guwahati, Guwahati, Guwahati - 781001",Guwahati,Guwahati,781001,2022-10-30
+CUST5097,Yashasvi Jaiswal,+91-9876543306,yashasvi.jaiswal@example.com,"780 Mumbai, Mumbai, Mumbai - 400001",Mumbai,Mumbai Central,400001,2023-01-16
+CUST5098,Tilak Varma,+91-9876543307,tilak.varma@example.com,"891 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2022-08-02
+CUST5099,Abhishek Sharma,+91-9876543308,abhishek.sharma@example.com,"902 Amritsar, Amritsar, Amritsar - 143001",Amritsar,Amritsar,143001,2023-05-19
+CUST5100,Rahul Tripathi,+91-9876543309,rahul.tripathi@example.com,"013 Ranchi, Ranchi, Ranchi - 834001",Ranchi,Ranchi,834001,2022-12-04
+CUST5101,Sarfaraz Khan,+91-9876543310,sarfaraz.khan@example.com,"124 Mumbai, Mumbai, Mumbai - 400001",Mumbai,Mumbai Central,400001,2023-03-21
+CUST5102,Dhruv Jurel,+91-9876543311,dhruv.jurel@example.com,"235 Agra, Agra, Agra - 282001",Agra,Agra,282001,2022-11-06
+CUST5103,Rajat Patidar,+91-9876543312,rajat.patidar@example.com,"346 Indore, Indore, Indore - 452001",Indore,Indore,452001,2023-04-23
+CUST5104,Rinku Singh,+91-9876543313,rinku.singh@example.com,"457 Aligarh, Aligarh, Aligarh - 202001",Aligarh,Aligarh,202001,2022-09-08
+CUST5105,Jitesh Sharma,+91-9876543314,jitesh.sharma@example.com,"568 Amritsar, Amritsar, Amritsar - 143001",Amritsar,Amritsar,143001,2023-02-24
+CUST5106,Mukesh Kumar,+91-9876543315,mukesh.kumar@example.com,"679 Patna, Patna, Patna - 800001",Patna,Patna,800001,2022-07-11
+CUST5107,Akash Deep,+91-9876543316,akash.deep@example.com,"780 Dehradun, Dehradun, Dehradun - 248001",Dehradun,Dehradun,248001,2023-06-27
+CUST5108,Yash Dayal,+91-9876543317,yash.dayal@example.com,"891 Allahabad, Allahabad, Allahabad - 211001",Allahabad,Allahabad,211001,2022-10-13
+CUST5109,Khaleel Ahmed,+91-9876543318,khaleel.ahmed@example.com,"902 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2023-01-29
+CUST5110,Tushar Deshpande,+91-9876543319,tushar.deshpande@example.com,"013 Mumbai, Mumbai, Mumbai - 400001",Mumbai,Mumbai Central,400001,2022-08-15
+CUST5111,Mayank Yadav,+91-9876543320,mayank.yadav@example.com,"124 Delhi, Delhi, Delhi - 110001",Delhi,Delhi,110001,2023-05-01
+CUST5112,Harshit Rana,+91-9876543321,harshit.rana@example.com,"235 Delhi, Delhi, Delhi - 110001",Delhi,Delhi,110001,2022-12-17
+CUST5113,Vyshak Vijaykumar,+91-9876543322,vyshak.vijaykumar@example.com,"346 Bangalore, Bangalore, Bangalore - 560001",Bangalore,Bangalore,560001,2023-03-05
+CUST5114,Umran Malik,+91-9876543323,umran.malik@example.com,"457 Srinagar, Srinagar, Srinagar - 190001",Srinagar,Srinagar,190001,2022-11-21
+CUST5115,Chetan Sakariya,+91-9876543324,chetan.sakariya@example.com,"568 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2023-04-07
+CUST5116,Kartik Tyagi,+91-9876543325,kartik.tyagi@example.com,"679 Haridwar, Haridwar, Haridwar - 249401",Haridwar,Haridwar,249401,2022-09-23
+CUST5117,Ishan Porel,+91-9876543326,ishan.porel@example.com,"780 Kolkata, Kolkata, Kolkata - 700001",Kolkata,Kolkata,700001,2023-02-08
+CUST5118,Lukman Meriwala,+91-9876543327,lukman.meriwala@example.com,"891 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-07-25
+CUST5119,Sandeep Warrier,+91-9876543328,sandeep.warrier@example.com,"902 Kochi, Kochi, Kochi - 682001",Kochi,Kochi,682001,2023-06-10
+CUST5120,Kamlesh Nagarkoti,+91-9876543329,kamlesh.nagarkoti@example.com,"013 Almora, Almora, Almora - 263601",Almora,Almora,263601,2022-10-26
+CUST5121,Shivam Mavi,+91-9876543330,shivam.mavi@example.com,"124 Noida, Noida, Noida - 201301",Noida,Noida,201301,2023-01-12
+CUST5122,Anuj Rawat,+91-9876543331,anuj.rawat@example.com,"235 Ramnagar, Ramnagar, Ramnagar - 244715",Ramnagar,Ramnagar,244715,2022-08-28
+CUST5123,Sheldon Jackson,+91-9876543332,sheldon.jackson@example.com,"346 Bhavnagar, Bhavnagar, Bhavnagar - 364001",Bhavnagar,Bhavnagar,364001,2023-05-15
+CUST5124,Kona Bharat,+91-9876543333,kona.bharat@example.com,"457 Vijayawada, Vijayawada, Vijayawada - 520001",Vijayawada,Vijayawada,520001,2022-12-31
+CUST5125,Ricky Bhui,+91-9876543334,ricky.bhui@example.com,"568 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2023-03-18
+CUST5126,Himanshu Sharma,+91-9876543335,himanshu.sharma@example.com,"679 Rohtak, Rohtak, Rohtak - 124001",Rohtak,Rohtak,124001,2022-11-03
+CUST5127,Arjun Azad,+91-9876543336,arjun.azad@example.com,"780 Jamshedpur, Jamshedpur, Jamshedpur - 831001",Jamshedpur,Jamshedpur,831001,2023-04-20
+CUST5128,Upendra Yadav,+91-9876543337,upendra.yadav@example.com,"891 Ranchi, Ranchi, Ranchi - 834001",Ranchi,Ranchi,834001,2022-09-05
+CUST5129,Anmolpreet Singh,+91-9876543338,anmolpreet.singh@example.com,"902 Mohali, Mohali, Mohali - 140301",Mohali,Mohali,140301,2023-02-21
+CUST5130,Harpreet Brar,+91-9876543339,harpreet.brar@example.com,"013 Moga, Moga, Moga - 142001",Moga,Moga,142001,2022-07-08
+CUST5131,Shahrukh Khan,+91-9876543340,shahrukh.khan2@example.com,"124 Hyderabad, Hyderabad, Hyderabad - 500001",Hyderabad,Hyderabad,500001,2023-06-24
+CUST5132,Prerak Mankad,+91-9876543341,prerak.mankad@example.com,"235 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-10-10
+CUST5133,Vishnu Solanki,+91-9876543342,vishnu.solanki@example.com,"346 Baroda, Baroda, Baroda - 390001",Baroda,Baroda,390001,2023-01-26
+CUST5134,Het Patel,+91-9876543343,het.patel@example.com,"457 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-08-12
+CUST5135,Chirag Jani,+91-9876543344,chirag.jani@example.com,"568 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2023-05-29
+CUST5136,Arpit Vasavada,+91-9876543345,arpit.vasavada@example.com,"679 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2022-12-15
+CUST5137,Dharmendrasinh Jadeja,+91-9876543346,dharmendrasinh.jadeja@example.com,"780 Jamnagar, Jamnagar, Jamnagar - 361001",Jamnagar,Jamnagar,361001,2023-03-02
+CUST5138,Roosh Kalaria,+91-9876543347,roosh.kalaria@example.com,"891 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2022-11-18
+CUST5139,Piyush Chawla,+91-9876543348,piyush.chawla@example.com,"902 Aligarh, Aligarh, Aligarh - 202001",Aligarh,Aligarh,202001,2023-04-04
+CUST5140,Tejas Baroka,+91-9876543349,tejas.baroka@example.com,"013 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-09-20
+CUST5141,Karan Patel,+91-9876543350,karan.patel@example.com,"124 Anand, Anand, Anand - 388001",Anand,Anand,388001,2023-02-05
+CUST5142,Samit Gohel,+91-9876543351,samit.gohel@example.com,"235 Bhavnagar, Bhavnagar, Bhavnagar - 364001",Bhavnagar,Bhavnagar,364001,2022-07-22
+CUST5143,Bhargav Merai,+91-9876543352,bhargav.merai@example.com,"346 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2023-06-07
+CUST5144,Siddharth Desai,+91-9876543353,siddharth.desai@example.com,"457 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-10-23
+CUST5145,Ripal Patel,+91-9876543354,ripal.patel@example.com,"568 Anand, Anand, Anand - 388001",Anand,Anand,388001,2023-01-09
+CUST5146,Chintan Gaja,+91-9876543355,chintan.gaja@example.com,"679 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2022-08-25
+CUST5147,Rush Kalaria,+91-9876543356,rush.kalaria@example.com,"780 Rajkot, Rajkot, Rajkot - 360001",Rajkot,Rajkot,360001,2023-05-12
+CUST5148,Urvil Patel,+91-9876543357,urvil.patel@example.com,"891 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-12-28
+CUST5149,Priyank Panchal,+91-9876543358,priyank.panchal@example.com,"902 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2023-03-14
+CUST5150,Parthiv Patel,+91-9876543359,parthiv.patel@example.com,"013 Ahmedabad, Ahmedabad, Ahmedabad - 380001",Ahmedabad,Ahmedabad,380001,2022-11-30
