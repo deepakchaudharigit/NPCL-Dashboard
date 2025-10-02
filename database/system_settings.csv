@@ -1,0 +1,26 @@
+setting_key,setting_value,category,description,data_type,updated_at,updated_by
+app_name,NPCL Dashboard,General,Application name displayed in header,string,2025-01-15 10:00:00,admin
+app_version,1.0.0,General,Current application version,string,2025-01-15 10:00:00,admin
+timezone,Asia/Kolkata,General,Default timezone for the application,string,2025-01-15 10:00:00,admin
+date_format,DD/MM/YYYY,General,Default date format for display,string,2025-01-15 10:00:00,admin
+time_format,24h,General,Time format (12h or 24h),string,2025-01-15 10:00:00,admin
+language,English,General,Default application language,string,2025-01-15 10:00:00,admin
+theme,light,Appearance,Default theme (light or dark),string,2025-01-15 10:00:00,admin
+primary_color,#6366F1,Appearance,Primary brand color,string,2025-01-15 10:00:00,admin
+logo_url,/images/npcl-logo.png,Appearance,Company logo URL,string,2025-01-15 10:00:00,admin
+favicon_url,/favicon.ico,Appearance,Favicon URL,string,2025-01-15 10:00:00,admin
+session_timeout,30,Security,Session timeout in minutes,number,2025-01-15 10:00:00,admin
+max_login_attempts,5,Security,Maximum failed login attempts,number,2025-01-15 10:00:00,admin
+password_min_length,8,Security,Minimum password length,number,2025-01-15 10:00:00,admin
+require_2fa,false,Security,Require two-factor authentication,boolean,2025-01-15 10:00:00,admin
+auto_logout,true,Security,Enable automatic logout on inactivity,boolean,2025-01-15 10:00:00,admin
+email_notifications,true,Notifications,Enable email notifications,boolean,2025-01-15 10:00:00,admin
+sms_notifications,false,Notifications,Enable SMS notifications,boolean,2025-01-15 10:00:00,admin
+notification_frequency,immediate,Notifications,Notification frequency (immediate/daily/weekly),string,2025-01-15 10:00:00,admin
+backup_enabled,true,System,Enable automatic backups,boolean,2025-01-15 10:00:00,admin
+backup_frequency,daily,System,Backup frequency (daily/weekly/monthly),string,2025-01-15 10:00:00,admin
+backup_retention,30,System,Backup retention period in days,number,2025-01-15 10:00:00,admin
+maintenance_mode,false,System,Enable maintenance mode,boolean,2025-01-15 10:00:00,admin
+debug_mode,false,System,Enable debug mode,boolean,2025-01-15 10:00:00,admin
+api_rate_limit,1000,System,API rate limit per hour,number,2025-01-15 10:00:00,admin
+max_file_upload,10,System,Maximum file upload size in MB,number,2025-01-15 10:00:00,admin

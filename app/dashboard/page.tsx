@@ -1,80 +1,142 @@
 'use client'
 
-import { useState } from 'react'
 import { 
   PhoneIcon, 
   ClockIcon, 
   GlobeAltIcon, 
   DocumentTextIcon,
-  ChevronDownIcon,
-  CalendarIcon
+  ArrowPathIcon
 } from '@heroicons/react/24/outline'
 import { MetricsCard } from '@/components/voicebot/MetricsCard'
 import { CallsByLanguageChart } from '@/components/voicebot/CallsByLanguageChart'
 import { CallsByStatusPanel } from '@/components/voicebot/CallsByStatusPanel'
+import { DateRangeSelector } from '@/components/ui/DateRangeSelector'
+import { useDashboardData, fallbackDashboardData } from '@/hooks/use-dashboard-data'
+import { DateRangeOption, getDateRangeDisplayText, calculateDateRange } from '@/lib/utils/date-ranges'
+import { useState, useEffect } from 'react'
+
+// Icon mapping for metrics cards
+const iconMap = {
+  phone: PhoneIcon,
+  clock: ClockIcon,
+  globe: GlobeAltIcon,
+  document: DocumentTextIcon
+}
 
 export default function DashboardPage() {
-  const [dateRange] = useState('16 Jan, 2025 - 16 Feb, 2025')
+  const [selectedDateRange, setSelectedDateRange] = useState<DateRangeOption>('this-month')
+  const [customStartDate, setCustomStartDate] = useState<string>('')
+  const [customEndDate, setCustomEndDate] = useState<string>('')
+  const { data, loading, error, refetch } = useDashboardData()
+  
+  // Use real data if available, otherwise fallback
+  const dashboardData = data || fallbackDashboardData
+  
+  // Get display text for the selected date range
+  const dateRangeDisplayText = selectedDateRange === 'custom' && customStartDate && customEndDate
+    ? `${new Date(customStartDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })} - ${new Date(customEndDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`
+    : getDateRangeDisplayText(selectedDateRange, dashboardData.dateRange)
+  
+  // Handle date range change
+  const handleDateRangeChange = (range: DateRangeOption, customStart?: string, customEnd?: string) => {
+    setSelectedDateRange(range)
+    
+    if (range === 'custom' && customStart && customEnd) {
+      // For custom with specific dates
+      setCustomStartDate(customStart)
+      setCustomEndDate(customEnd)
+      refetch(range, customStart, customEnd)
+    } else if (range !== 'custom') {
+      // For predefined ranges
+      const dateRange = calculateDateRange(range)
+      const startDate = dateRange.startDate.toISOString().split('T')[0]
+      const endDate = dateRange.endDate.toISOString().split('T')[0]
+      
+      refetch(range, startDate, endDate)
+    }
+    // If custom is selected but no dates provided, do nothing (wait for date picker)
+  }
+
+  // Initialize with this month data on component mount
+  useEffect(() => {
+    const dateRange = calculateDateRange('this-month')
+    const startDate = dateRange.startDate.toISOString().split('T')[0]
+    const endDate = dateRange.endDate.toISOString().split('T')[0]
+    refetch('this-month', startDate, endDate)
+  }, [])
 
   return (
     <div className="w-full h-full flex flex-col">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-4 flex-shrink-0">
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">Dashboard</h1>
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">Dashboard</h1>
+          {loading && (
+            <ArrowPathIcon className="h-5 w-5 text-gray-400 animate-spin" />
+          )}
+        </div>
         
-        {/* Date Range Picker */}
-        <div className="relative">
-          <button className="w-full md:w-60 h-10 bg-white border border-gray-200 rounded-lg px-4 flex items-center justify-between text-sm text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors cursor-pointer">
-            <span>{dateRange}</span>
-            <CalendarIcon className="h-4 w-4 text-gray-500" />
+        {/* Date Range Selector */}
+        <DateRangeSelector
+          selectedRange={selectedDateRange}
+          onRangeChange={handleDateRangeChange}
+          displayText={dateRangeDisplayText}
+          loading={loading}
+          customStartDate={customStartDate}
+          customEndDate={customEndDate}
+        />
+      </div>
+
+      {/* Error Message */}
+      {error && (
+        <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg flex items-center gap-2 flex-shrink-0">
+          <div className="text-red-600 text-sm">
+            <strong>Error:</strong> {error}
+          </div>
+          <button
+            onClick={() => {
+              if (selectedDateRange === 'custom' && customStartDate && customEndDate) {
+                refetch(selectedDateRange, customStartDate, customEndDate)
+              } else if (selectedDateRange !== 'custom') {
+                const dateRange = calculateDateRange(selectedDateRange)
+                const startDate = dateRange.startDate.toISOString().split('T')[0]
+                const endDate = dateRange.endDate.toISOString().split('T')[0]
+                refetch(selectedDateRange, startDate, endDate)
+              } else {
+                refetch()
+              }
+            }}
+            className="ml-auto text-red-600 hover:text-red-800 text-sm underline"
+          >
+            Retry
           </button>
         </div>
-      </div>
+      )}
 
-      {/* Metric Cards Row */}
+      {/* Metric Cards Row - EXACT same grid structure maintained */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6 flex-shrink-0">
-        <MetricsCard
-          title="Total Calls"
-          value="18"
-          growth="+12% from yesterday"
-          icon={<PhoneIcon className="w-6 h-6" />}
-          iconBgColor="#EEF2FF"
-          iconColor="#6366F1"
-        />
-        
-        <MetricsCard
-          title="Avg Duration"
-          value="2:35"
-          growth="+5% from yesterday"
-          icon={<ClockIcon className="w-6 h-6" />}
-          iconBgColor="#F5F3FF"
-          iconColor="#8B5CF6"
-        />
-        
-        <MetricsCard
-          title="Language"
-          value="6"
-          growth="+12% from yesterday"
-          icon={<GlobeAltIcon className="w-6 h-6" />}
-          iconBgColor="#FDF2F8"
-          iconColor="#EC4899"
-        />
-        
-        <MetricsCard
-          title="Docket Count"
-          value="56"
-          growth="-35% from yesterday"
-          icon={<DocumentTextIcon className="w-6 h-6" />}
-          iconBgColor="#FFFBEB"
-          iconColor="#F59E0B"
-          isNegative={true}
-        />
+        {dashboardData.metricsCards.map((card, index) => {
+          const IconComponent = iconMap[card.icon as keyof typeof iconMap] || PhoneIcon
+          
+          return (
+            <MetricsCard
+              key={index}
+              title={card.title}
+              value={card.value}
+              growth={card.growth}
+              icon={<IconComponent className="w-6 h-6" />}
+              iconBgColor={card.iconBgColor}
+              iconColor={card.iconColor}
+              isNegative={card.isNegative}
+            />
+          )
+        })}
       </div>
 
-      {/* Charts Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full flex-1 min-h-0">
-        <CallsByLanguageChart />
-        <CallsByStatusPanel />
+      {/* Charts Section - Fixed: Proper height management as per UI.md */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full flex-1 min-h-0 pb-4">
+        <CallsByLanguageChart data={dashboardData.languageChartData} loading={loading} />
+        <CallsByStatusPanel data={dashboardData.statusPanelData} loading={loading} />
       </div>
     </div>
   )

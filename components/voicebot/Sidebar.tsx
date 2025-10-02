@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { 
   Squares2X2Icon, 
@@ -35,10 +36,19 @@ export function Sidebar() {
   ]
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-60 bg-white border-r border-gray-200 z-50 p-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+    <div className="fixed left-0 top-0 h-screen w-60 bg-white border-r border-gray-200 z-50 p-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 shadow-lg md:shadow-none">
       {/* Logo Section */}
-      <div className="h-20 px-5 py-6 border-b border-gray-100 flex items-center">
-        <h1 className="text-2xl font-bold text-gray-800 tracking-widest">NPCL</h1>
+      <div className="px-3 py-4 border-b border-gray-100">
+        <div className="flex items-center justify-center px-4 py-3 mx-3 rounded-lg bg-gray-50">
+          <Image
+            src="/logo.png"
+            alt="NPCL Logo"
+            width={120}
+            height={32}
+            className="object-contain max-w-full max-h-full"
+            priority
+          />
+        </div>
       </div>
 
       {/* Navigation Menu */}
