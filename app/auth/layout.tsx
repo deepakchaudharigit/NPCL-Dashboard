@@ -1,18 +1,18 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Authentication - NPCL Dashboard',
-  description: 'Secure login and registration for NPCL Power Management Dashboard. Access your power monitoring and management tools with enterprise-grade security.',
-  keywords: ['NPCL login', 'power dashboard login', 'energy management access', 'secure authentication', 'power system login'],
+  title: 'Authentication - NPCL Power Management',
+  description: 'Secure authentication for NPCL power management dashboard. Login, register, and manage your account with role-based access control.',
+  keywords: ['NPCL login', 'power management authentication', 'secure login', 'user authentication', 'dashboard access', 'account management'],
   openGraph: {
-    title: 'Authentication - NPCL Dashboard',
-    description: 'Secure access to NPCL Power Management Dashboard',
+    title: 'NPCL Power Management Authentication',
+    description: 'Secure authentication for power management dashboard with role-based access control',
     type: 'website',
   },
   robots: {
-    index: false, // Don't index auth pages
-    follow: false,
-  },
+    index: true,
+    follow: true,
+  }
 }
 
 export default function AuthLayout({

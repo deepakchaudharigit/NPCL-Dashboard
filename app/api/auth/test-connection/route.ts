@@ -1,55 +1,30 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@lib/prisma'
-import { serverEnv } from '@config/env.server'
+import { prisma } from '@/lib/prisma'
 
-/**
- * Test Connection API Route
- * Tests database connection and environment configuration
- * 
- * GET /api/auth/test-connection
- */
-export async function GET(_req: NextRequest) {
+export async function GET(request: NextRequest) {
   try {
     // Test database connection
     await prisma.$connect()
     
-    // Test a simple query
+    // Try a simple query
     const userCount = await prisma.user.count()
     
     return NextResponse.json({
       success: true,
-      message: 'Connection test successful',
-      data: {
-        database: {
-          connected: true,
-          userCount,
-        },
-        environment: {
-          nodeEnv: process.env.NODE_ENV,
-          nextAuthUrl: serverEnv.NEXTAUTH_URL,
-          nextAuthSecretExists: !!serverEnv.NEXTAUTH_SECRET,
-          databaseUrlExists: !!process.env.DATABASE_URL,
-        },
-        timestamp: new Date().toISOString(),
-      }
+      message: 'Database connection successful',
+      userCount,
+      timestamp: new Date().toISOString()
     })
   } catch (error) {
-    console.error('Connection test failed:', error)
+    console.error('Database connection test failed:', error)
     
-    return NextResponse.json(
-      {
-        success: false,
-        message: 'Connection test failed',
-        error: error instanceof Error ? error.message : 'Unknown error',
-        environment: {
-          nodeEnv: process.env.NODE_ENV,
-          nextAuthUrl: serverEnv.NEXTAUTH_URL,
-          nextAuthSecretExists: !!serverEnv.NEXTAUTH_SECRET,
-          databaseUrlExists: !!process.env.DATABASE_URL,
-        },
-        timestamp: new Date().toISOString(),
-      },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      success: false,
+      message: 'Database connection failed',
+      error: error instanceof Error ? error.message : 'Unknown error',
+      timestamp: new Date().toISOString()
+    }, { status: 500 })
+  } finally {
+    await prisma.$disconnect()
   }
 }

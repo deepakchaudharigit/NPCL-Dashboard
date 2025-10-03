@@ -1,6 +1,7 @@
 'use client'
 
 import { StatusPanelData } from '@/hooks/use-dashboard-data'
+import { ChartSkeleton } from '@/components/ui/ChartSkeleton'
 
 // Fallback data to maintain panel structure - now with colors for visual enhancement
 const fallbackStatusData = [
@@ -39,6 +40,11 @@ interface CallsByStatusPanelProps {
 }
 
 export function CallsByStatusPanel({ data, loading = false }: CallsByStatusPanelProps) {
+  // Show loading skeleton while data is being fetched
+  if (loading && (!data || data.length === 0)) {
+    return <ChartSkeleton title="Calls by Status" rows={8} />
+  }
+
   // Use provided data or fallback to maintain panel structure
   let statusData = data && data.length > 0 ? data : fallbackStatusData
   
@@ -48,46 +54,77 @@ export function CallsByStatusPanel({ data, loading = false }: CallsByStatusPanel
     ...getStatusColors(item.status)
   }))
 
-  // Calculate the maximum value for bar width scaling (proportional to max calls)
+  // Sort statuses by count in descending order
+  statusData = [...statusData].sort((a, b) => b.count - a.count)
+
+  // Calculate the maximum value for bar width scaling and total for percentages
   const maxCount = Math.max(...statusData.map(item => item.count))
+  const totalCount = statusData.reduce((sum, item) => sum + item.count, 0)
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 h-full flex flex-col">
-      <div className="flex items-center justify-between mb-4 flex-shrink-0">
-        <h3 className="text-lg font-semibold text-gray-900">Calls by Status</h3>
-        {loading && (
-          <div className="w-4 h-4 border-2 border-gray-300 border-t-indigo-600 rounded-full animate-spin"></div>
-        )}
+    <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100 h-full flex flex-col overflow-hidden">
+      <div className="flex items-center justify-between mb-3 flex-shrink-0">
+        <h3 className="text-base font-semibold text-gray-900">Calls by Status</h3>
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-gray-500">Total: {totalCount}</span>
+          {loading && (
+            <div className="w-3 h-3 border-2 border-gray-300 border-t-indigo-600 rounded-full animate-spin"></div>
+          )}
+        </div>
       </div>
       
-      <div className="space-y-2 overflow-y-auto flex-1">
+      <div className="space-y-2 overflow-hidden flex-1">
         {statusData.map((item, index) => {
-          // Calculate bar width as percentage of max value (graph visualization)
-          const barWidth = maxCount > 0 ? (item.count / maxCount) * 100 : 0
+          // Calculate bar width with minimum 15% for readability
+          const rawBarWidth = maxCount > 0 ? (item.count / maxCount) * 100 : 0
+          const barWidth = Math.max(rawBarWidth, 15)
+          const percentage = totalCount > 0 ? ((item.count / totalCount) * 100).toFixed(1) : '0'
           
           return (
             <div 
-              key={index}
-              className="relative overflow-hidden rounded-lg transition-all duration-200 hover:shadow-sm"
+              key={`${item.status}-${index}`}
+              className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-md hover:scale-[1.02]"
             >
-              {/* Background bar with width based on count (graph feature) */}
-              <div 
-                className={`absolute inset-0 ${item.bgColor} transition-all duration-300`}
-                style={{ width: `${barWidth}%` }}
-              />
+              {/* Tooltip */}
+              <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-20 whitespace-nowrap pointer-events-none">
+                {item.status}: {item.count} calls ({percentage}%)
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-2 border-r-2 border-t-2 border-transparent border-t-gray-900"></div>
+              </div>
               
-              {/* Content overlay */}
-              <div className="relative flex items-center justify-between p-2 bg-gray-50 bg-opacity-20">
-                <span className={`text-sm font-medium ${item.textColor} relative z-10`}>
-                  {item.status}
-                </span>
-                <span className={`text-sm font-bold ${item.textColor} relative z-10`}>
-                  {item.count}
-                </span>
+              {/* Background container */}
+              <div className="relative bg-gray-50 rounded h-8 flex items-center">
+                {/* Animated bar with correct proportional width */}
+                <div 
+                  className={`absolute left-0 top-0 bottom-0 ${item.bgColor} rounded transition-all duration-700 ease-out`}
+                  style={{ 
+                    width: `${barWidth}%`,
+                    animationDelay: `${index * 100}ms`
+                  }}
+                />
+                
+                {/* Content overlay with proper spacing */}
+                <div className="relative flex items-center justify-between w-full px-3 z-10">
+                  <span className={`text-sm font-medium ${item.textColor} transition-colors duration-200 truncate max-w-[55%]`}>
+                    {item.status}
+                  </span>
+                  <div className="flex items-center gap-2 flex-shrink-0">
+                    <span className={`text-sm font-bold ${item.textColor} transition-colors duration-200`}>
+                      {item.count}
+                    </span>
+                    <span className={`text-xs ${item.textColor} opacity-75 group-hover:opacity-100 transition-opacity duration-200`}>
+                      ({percentage}%)
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           )
         })}
+      </div>
+      
+      {/* Data validation indicator */}
+      <div className="mt-2 text-xs text-gray-400 text-center flex-shrink-0">
+        {statusData.length} statuses • {new Date().toLocaleTimeString()}
       </div>
     </div>
   )

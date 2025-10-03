@@ -115,7 +115,12 @@
     "perf:optimize": "npm run build && npm run analyze:bundle",
     "perf:test": "npm run audit:performance && npm run audit:lighthouse",
     "bundle:check": "node scripts/simple-bundle-check.js",
-    "perf:quick": "npm run bundle:check && npm run audit:performance"
+    "perf:quick": "npm run bundle:check && npm run audit:performance",
+    "lighthouse:full": "./scripts/lighthouse-test.sh",
+    "lighthouse:report": "npx lighthouse http://localhost:4000 --output=html --output-path=./lighthouse-report.html --view",
+    "lighthouse:ci": "npx lighthouse http://localhost:4000 --output=json --output-path=./lighthouse-ci.json --chrome-flags=--headless",
+    "lighthouse:mobile": "npx lighthouse http://localhost:4000 --preset=perf --form-factor=mobile --view",
+    "lighthouse:desktop": "npx lighthouse http://localhost:4000 --preset=perf --form-factor=desktop --view"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

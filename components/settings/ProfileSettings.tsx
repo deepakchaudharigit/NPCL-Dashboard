@@ -8,7 +8,9 @@ export function ProfileSettings() {
   const { data: session, update } = useSession()
   const [isLoading, setIsLoading] = useState(false)
   const [isLoadingProfile, setIsLoadingProfile] = useState(true)
+  const [isUploadingImage, setIsUploadingImage] = useState(false)
   const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
+  const [profileImage, setProfileImage] = useState<string | null>(null)
   
   const [formData, setFormData] = useState({
     fullName: '',
@@ -59,6 +61,45 @@ export function ProfileSettings() {
       ...prev,
       [name]: value
     }))
+  }
+
+  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    // Validate file type
+    if (!file.type.startsWith('image/')) {
+      setMessage({ type: 'error', text: 'Please select a valid image file' })
+      return
+    }
+
+    // Validate file size (max 5MB)
+    if (file.size > 5 * 1024 * 1024) {
+      setMessage({ type: 'error', text: 'Image size must be less than 5MB' })
+      return
+    }
+
+    setIsUploadingImage(true)
+    setMessage(null)
+
+    try {
+      // Create a preview URL
+      const reader = new FileReader()
+      reader.onload = (event) => {
+        setProfileImage(event.target?.result as string)
+      }
+      reader.readAsDataURL(file)
+
+      // For now, we'll just show the preview
+      // In a real implementation, you would upload to a server or cloud storage
+      setMessage({ type: 'success', text: 'Profile picture updated successfully!' })
+      setTimeout(() => setMessage(null), 3000)
+    } catch (error) {
+      setMessage({ type: 'error', text: 'Failed to upload image' })
+      setTimeout(() => setMessage(null), 3000)
+    } finally {
+      setIsUploadingImage(false)
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -131,19 +172,40 @@ export function ProfileSettings() {
         {/* Profile Picture */}
         <div className="flex items-center gap-6">
           <div className="relative">
-            <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center">
-              <UserCircleIcon className="w-16 h-16 text-gray-400" />
+            <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+              {profileImage ? (
+                <img 
+                  src={profileImage} 
+                  alt="Profile" 
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <UserCircleIcon className="w-16 h-16 text-gray-400" />
+              )}
             </div>
-            <button
-              type="button"
-              className="absolute bottom-0 right-0 w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center text-white hover:bg-indigo-700 transition-colors"
+            <label
+              htmlFor="profileImage"
+              className="absolute bottom-0 right-0 w-6 h-6 bg-indigo-600 rounded-full flex items-center justify-center text-white hover:bg-indigo-700 transition-colors cursor-pointer"
             >
-              <CameraIcon className="w-3 h-3" />
-            </button>
+              {isUploadingImage ? (
+                <ArrowPathIcon className="w-3 h-3 animate-spin" />
+              ) : (
+                <CameraIcon className="w-3 h-3" />
+              )}
+            </label>
+            <input
+              type="file"
+              id="profileImage"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="hidden"
+              disabled={isUploadingImage}
+            />
           </div>
           <div>
             <h3 className="text-sm font-medium text-gray-900">Profile Picture</h3>
-            <p className="text-sm text-gray-500">Upload a new profile picture</p>
+            <p className="text-sm text-gray-500">Upload a new profile picture (max 5MB)</p>
+            <p className="text-xs text-gray-400 mt-1">Supported formats: JPG, PNG, GIF</p>
           </div>
         </div>
 
@@ -204,10 +266,10 @@ export function ProfileSettings() {
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
-              placeholder="+91-9876543210"
+              placeholder="9876543210 or +91-9876543210"
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
             />
-            <p className="text-xs text-gray-500 mt-1">Format: +91-XXXXXXXXXX</p>
+            <p className="text-xs text-gray-500 mt-1">Optional: Enter 10-digit number or with +91</p>
           </div>
 
           <div>

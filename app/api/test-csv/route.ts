@@ -1,50 +1,47 @@
-/**
- * Test CSV Reading API Route
- * Simple endpoint to test CSV reading functionality
- */
+import { NextRequest, NextResponse } from 'next/server'
+import fs from 'fs'
+import path from 'path'
 
-import { NextResponse } from 'next/server'
-import { testCSVReader } from '@/lib/data/test-csv-reader'
-import { 
-  getLatestDailyMetrics,
-  getLatestLanguageStatistics,
-  getLatestStatusStatistics
-} from '@/lib/data/csv-reader'
-
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
-    // Run the test
-    const testResult = testCSVReader()
+    const csvPath = path.join(process.cwd(), 'database', 'users.csv')
     
-    if (!testResult) {
-      return NextResponse.json(
-        { error: 'CSV test failed' },
-        { status: 500 }
-      )
+    if (!fs.existsSync(csvPath)) {
+      return NextResponse.json({
+        success: false,
+        message: 'CSV file not found'
+      }, { status: 404 })
     }
-
-    // Get sample data
-    const latestMetrics = getLatestDailyMetrics()
-    const languageStats = getLatestLanguageStatistics()
-    const statusStats = getLatestStatusStatistics()
-
+    
+    const csvContent = fs.readFileSync(csvPath, 'utf8')
+    const lines = csvContent.split('\n').filter(line => line.trim())
+    const headers = lines[0].split(',')
+    const dataRows = lines.slice(1)
+    
     return NextResponse.json({
       success: true,
-      message: 'CSV reading test passed',
+      message: 'CSV test successful',
       data: {
-        latestMetrics,
-        languageStatsCount: languageStats.length,
-        statusStatsCount: statusStats.length,
-        sampleLanguageStats: languageStats.slice(0, 3),
-        sampleStatusStats: statusStats.slice(0, 3)
+        file: 'users.csv',
+        headers,
+        rowCount: dataRows.length,
+        sampleData: dataRows.slice(0, 3).map(row => {
+          const values = row.split(',')
+          const obj: Record<string, string> = {}
+          headers.forEach((header, index) => {
+            obj[header] = values[index] || ''
+          })
+          return obj
+        })
       }
     })
-
   } catch (error) {
-    console.error('CSV test error:', error)
-    return NextResponse.json(
-      { error: 'CSV test failed', details: error instanceof Error ? error.message : 'Unknown error' },
-      { status: 500 }
-    )
+    console.error('CSV test failed:', error)
+    
+    return NextResponse.json({
+      success: false,
+      message: 'CSV test failed',
+      error: error instanceof Error ? error.message : 'Unknown error'
+    }, { status: 500 })
   }
 }

@@ -20,7 +20,7 @@ export function PasswordSettings() {
 
   const [passwordStrength, setPasswordStrength] = useState({
     score: 0,
-    feedback: []
+    feedback: [] as string[]
   })
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -97,19 +97,22 @@ export function PasswordSettings() {
     }
 
     try {
-      const response = await fetch('/api/auth/change-password', {
+      const response = await fetch('/api/auth/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          action: 'change-password',
           currentPassword: formData.currentPassword,
           newPassword: formData.newPassword
         }),
       })
 
-      if (response.ok) {
-        setMessage({ type: 'success', text: 'Password changed successfully!' })
+      const result = await response.json()
+      
+      if (response.ok && result.success) {
+        setMessage({ type: 'success', text: result.message || 'Password changed successfully!' })
         setFormData({
           currentPassword: '',
           newPassword: '',
@@ -117,8 +120,7 @@ export function PasswordSettings() {
         })
         setPasswordStrength({ score: 0, feedback: [] })
       } else {
-        const error = await response.json()
-        setMessage({ type: 'error', text: error.message || 'Failed to change password' })
+        setMessage({ type: 'error', text: result.error || 'Failed to change password' })
       }
     } catch (error) {
       setMessage({ type: 'error', text: 'An error occurred while changing password' })

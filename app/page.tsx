@@ -7,13 +7,17 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'NPCL VoiceBot Dashboard - Call Management System',
-  description: 'Welcome to NPCL VoiceBot Dashboard - A comprehensive call management system for VoiceBot interactions, analytics, and customer service operations.',
-  keywords: ['NPCL', 'voicebot', 'call management', 'dashboard', 'customer service', 'analytics', 'voice recognition'],
+  title: 'NPCL Power Management Dashboard - Real-time Energy Monitoring',
+  description: 'NPCL Power Management Dashboard provides comprehensive real-time monitoring, analytics, and control of power generation and distribution systems. Advanced energy management for optimal grid performance.',
+  keywords: ['NPCL', 'power management', 'energy monitoring', 'dashboard', 'power generation', 'grid management', 'electricity', 'renewable energy', 'power analytics', 'energy efficiency'],
   openGraph: {
-    title: 'NPCL VoiceBot Dashboard - Call Management System',
-    description: 'Comprehensive VoiceBot call management system for customer service analytics',
+    title: 'NPCL Power Management Dashboard - Real-time Energy Monitoring',
+    description: 'Comprehensive power management dashboard for real-time energy monitoring and grid optimization',
     type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 

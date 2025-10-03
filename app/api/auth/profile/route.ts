@@ -119,18 +119,15 @@ export async function PUT(request: Request) {
       )
     }
 
-    if (!phone?.trim()) {
-      return NextResponse.json(
-        { error: 'Phone number is required' },
-        { status: 400 }
-      )
-    }
-
-    if (!/^\+91-\d{10}$/.test(phone)) {
-      return NextResponse.json(
-        { error: 'Phone must be in format +91-XXXXXXXXXX' },
-        { status: 400 }
-      )
+    if (phone?.trim()) {
+      // Validate phone format if provided (allow various formats)
+      const phoneRegex = /^(\+91[\s-]?)?[6-9]\d{9}$/
+      if (!phoneRegex.test(phone.replace(/[\s-]/g, ''))) {
+        return NextResponse.json(
+          { error: 'Please enter a valid Indian phone number' },
+          { status: 400 }
+        )
+      }
     }
 
     if (!department?.trim()) {
@@ -152,13 +149,14 @@ export async function PUT(request: Request) {
     }
 
     // Update user data
-    users[userIndex] = {
+    const updatedUser = {
       ...users[userIndex],
       full_name: fullName.trim(),
-      phone: phone.trim(),
+      phone: phone?.trim() || '',
       department: department.trim(),
       last_login: new Date().toISOString().replace('T', ' ').substring(0, 19)
     }
+    users[userIndex] = updatedUser
     
     // Save to CSV
     if (writeUsersToCSV(users)) {

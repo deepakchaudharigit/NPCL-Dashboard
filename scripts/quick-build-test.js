@@ -2,23 +2,32 @@
 
 /**
  * Quick Build Test Script
- * Tests if the TypeScript compilation passes
+ * Performs a fast build test without full compilation
  */
 
 const { execSync } = require('child_process');
 
-console.log('🔧 Testing TypeScript compilation...');
+console.log('⚡ Running quick build test...');
 
 try {
-  // Run TypeScript check
-  execSync('npx tsc --noEmit', { stdio: 'inherit' });
-  console.log('✅ TypeScript compilation successful!');
+  // Quick TypeScript check
+  console.log('🔍 Checking TypeScript...');
+  execSync('npx tsc --noEmit --skipLibCheck', { stdio: 'inherit' });
   
-  console.log('\n🚀 Ready to run full build with:');
+  // Quick lint check
+  console.log('🔍 Running quick lint...');
+  execSync('npx eslint . --ext .ts,.tsx --max-warnings 0 --quiet', { stdio: 'inherit' });
+  
+  console.log('\n✅ Quick build test passed!');
+  console.log('\n📋 Checks completed:');
+  console.log('  ✅ TypeScript compilation');
+  console.log('  ✅ ESLint validation');
+  
+  console.log('\n🚀 Ready for full build:');
   console.log('npm run build');
   
 } catch (error) {
-  console.error('❌ TypeScript compilation failed');
-  console.error('Please fix the errors above before proceeding');
+  console.error('❌ Quick build test failed');
+  console.error('Please fix the issues above before proceeding');
   process.exit(1);
 }

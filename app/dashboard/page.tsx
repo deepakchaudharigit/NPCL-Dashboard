@@ -66,9 +66,9 @@ export default function DashboardPage() {
   }, [])
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col overflow-hidden">
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-4 flex-shrink-0">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-3 gap-3 flex-shrink-0">
         <div className="flex items-center gap-3">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 tracking-tight">Dashboard</h1>
           {loading && (
@@ -113,8 +113,8 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {/* Metric Cards Row - EXACT same grid structure maintained */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6 flex-shrink-0">
+      {/* Metric Cards Row - Enhanced with consistent spacing */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-4 flex-shrink-0">
         {dashboardData.metricsCards.map((card, index) => {
           const IconComponent = iconMap[card.icon as keyof typeof iconMap] || PhoneIcon
           
@@ -133,11 +133,16 @@ export default function DashboardPage() {
         })}
       </div>
 
-      {/* Charts Section - Fixed: Proper height management as per UI.md */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full flex-1 min-h-0 pb-4">
-        <CallsByLanguageChart data={dashboardData.languageChartData} loading={loading} />
-        <CallsByStatusPanel data={dashboardData.statusPanelData} loading={loading} />
+      {/* Charts Section - Enhanced with proper spacing and responsive behavior */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 w-full flex-1 min-h-0 mb-2">
+        <div className="w-full h-full">
+          <CallsByLanguageChart data={dashboardData.languageChartData} loading={loading} />
+        </div>
+        <div className="w-full h-full">
+          <CallsByStatusPanel data={dashboardData.statusPanelData} loading={loading} />
+        </div>
       </div>
+
     </div>
   )
 }

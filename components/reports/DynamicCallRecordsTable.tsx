@@ -59,19 +59,13 @@ const formatDateTime = (dateTimeStr: string) => {
 }
 
 const formatDuration = (durationStr: string) => {
-  // If it's already formatted (like "2:45"), return as is
-  if (durationStr.includes(':')) {
-    return durationStr
-  }
-  
-  // If it's seconds, convert to MM:SS format
+  if (durationStr.includes(':')) return durationStr
   const seconds = parseInt(durationStr)
   if (!isNaN(seconds)) {
     const minutes = Math.floor(seconds / 60)
     const remainingSeconds = seconds % 60
     return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
   }
-  
   return durationStr
 }
 
@@ -83,49 +77,28 @@ interface DynamicCallRecordsTableProps {
   onPageChange?: (page: number) => void
 }
 
-export function DynamicCallRecordsTable({ 
-  records, 
-  pagination, 
+export function DynamicCallRecordsTable({
+  records,
+  pagination,
   loading = false,
   onCallClick,
-  onPageChange 
+  onPageChange
 }: DynamicCallRecordsTableProps) {
 
   const handlePageChange = (page: number) => {
-    if (page >= 1 && page <= pagination.totalPages) {
-      onPageChange?.(page)
-    }
+    if (page >= 1 && page <= pagination.totalPages) onPageChange?.(page)
   }
 
   const generatePageNumbers = () => {
     const pages = []
     const { currentPage, totalPages } = pagination
-    
-    // Always show first page
     pages.push(1)
-    
-    // Add ellipsis if needed
-    if (currentPage > 3) {
-      pages.push('...')
-    }
-    
-    // Add pages around current page
+    if (currentPage > 3) pages.push('...')
     for (let i = Math.max(2, currentPage - 1); i <= Math.min(totalPages - 1, currentPage + 1); i++) {
-      if (!pages.includes(i)) {
-        pages.push(i)
-      }
+      if (!pages.includes(i)) pages.push(i)
     }
-    
-    // Add ellipsis if needed
-    if (currentPage < totalPages - 2) {
-      pages.push('...')
-    }
-    
-    // Always show last page if more than 1 page
-    if (totalPages > 1 && !pages.includes(totalPages)) {
-      pages.push(totalPages)
-    }
-    
+    if (currentPage < totalPages - 2) pages.push('...')
+    if (totalPages > 1 && !pages.includes(totalPages)) pages.push(totalPages)
     return pages
   }
 
@@ -141,94 +114,68 @@ export function DynamicCallRecordsTable({
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 h-full flex flex-col">
-      {/* Table Container with Horizontal Scroll */}
-      <div className="flex-1 overflow-auto">
-        <table className="min-w-full divide-y divide-gray-200" style={{ minWidth: '1200px' }}>
-          <thead className="bg-gray-50 sticky top-0 z-10">
+    <div className="bg-white border border-gray-200 rounded-lg overflow-x-auto overflow-y-auto" style={{ maxHeight: '600px' }}>
+      <table className="min-w-full divide-y divide-gray-200" style={{ minWidth: '1200px' }}>
+        <thead className="bg-gray-50 sticky top-0 z-10">
+          <tr>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-36">CLI</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-44">Received Date-Time</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-28">Language</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-48">Query Type</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-40">Status</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-32">Tickets Identified</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-44">Transferred to IVR</th>
+            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-24">Duration</th>
+          </tr>
+        </thead>
+        <tbody className="bg-white divide-y divide-gray-100">
+          {records.length === 0 ? (
             <tr>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-36">
-                CLI
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-44">
-                Received Date-Time
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-28">
-                Language
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-48">
-                Query Type
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-40">
-                Status
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-32">
-                Tickets Identified
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-44">
-                Transferred to IVR
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider min-w-24">
-                Duration
-              </th>
+              <td colSpan={8} className="px-4 py-8 text-center text-gray-500">
+                No records found for the selected filters.
+              </td>
             </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-100">
-            {records.length === 0 ? (
-              <tr>
-                <td colSpan={8} className="px-4 py-8 text-center text-gray-500">
-                  No records found for the selected filters.
+          ) : (
+            records.map((record) => (
+              <tr key={record.id} className="hover:bg-gray-50 transition-colors">
+                <td className="px-4 py-3 whitespace-nowrap">
+                  <button
+                    onClick={() => onCallClick?.(record.id)}
+                    className="text-sm text-indigo-600 hover:text-indigo-900 font-medium transition-colors"
+                  >
+                    {record.cli}
+                  </button>
+                </td>
+                <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900">
+                  {formatDateTime(record.receivedDateTime)}
+                </td>
+                <td className="px-4 py-3 whitespace-nowrap">{getLanguageBadge(record.language)}</td>
+                <td className="px-4 py-3 text-sm text-gray-900">
+                  <div className="truncate max-w-48" title={record.queryType}>
+                    {record.queryType}
+                  </div>
+                </td>
+                <td className="px-4 py-3 whitespace-nowrap">{getStatusBadge(record.status)}</td>
+                <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 text-center">
+                  {record.ticketsIdentified}
+                </td>
+                <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900">
+                  {record.transferredToIVR ? formatDateTime(record.transferredToIVR) : '-'}
+                </td>
+                <td className="px-4 py-3 whitespace-nowrap text-center">
+                  <div className="flex items-center justify-center gap-2">
+                    <span className="text-sm text-gray-600">{formatDuration(record.voiceFile)}</span>
+                    <button className="text-indigo-600 hover:text-indigo-900 p-1 transition-colors">
+                      <PlayIcon className="h-4 w-4" />
+                    </button>
+                  </div>
                 </td>
               </tr>
-            ) : (
-              records.map((record) => (
-                <tr key={record.id} className="hover:bg-gray-50 transition-colors">
-                  <td className="px-4 py-3 whitespace-nowrap">
-                    <button
-                      onClick={() => onCallClick?.(record.id)}
-                      className="text-sm text-indigo-600 hover:text-indigo-900 font-medium transition-colors"
-                    >
-                      {record.cli}
-                    </button>
-                  </td>
-                  <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900">
-                    {formatDateTime(record.receivedDateTime)}
-                  </td>
-                  <td className="px-4 py-3 whitespace-nowrap">
-                    {getLanguageBadge(record.language)}
-                  </td>
-                  <td className="px-4 py-3 text-sm text-gray-900">
-                    <div className="truncate max-w-48" title={record.queryType}>
-                      {record.queryType}
-                    </div>
-                  </td>
-                  <td className="px-4 py-3 whitespace-nowrap">
-                    {getStatusBadge(record.status)}
-                  </td>
-                  <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900 text-center">
-                    {record.ticketsIdentified}
-                  </td>
-                  <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900">
-                    {record.transferredToIVR ? formatDateTime(record.transferredToIVR) : '-'}
-                  </td>
-                  <td className="px-4 py-3 whitespace-nowrap text-center">
-                    <div className="flex items-center justify-center gap-2">
-                      <span className="text-sm text-gray-600">
-                        {formatDuration(record.voiceFile)}
-                      </span>
-                      <button className="text-indigo-600 hover:text-indigo-900 p-1 transition-colors">
-                        <PlayIcon className="h-4 w-4" />
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))
-            )}
-          </tbody>
-        </table>
-      </div>
-
-      {/* Pagination */}
+            ))
+          )}
+        </tbody>
+      </table>
+      {/* Pagination fixed outside scroll area */}
       <div className="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 flex-shrink-0">
         <div className="flex items-center text-sm text-gray-700">
           <span>
@@ -237,7 +184,6 @@ export function DynamicCallRecordsTable({
             {pagination.totalRecords} results
           </span>
         </div>
-        
         <div className="flex items-center space-x-2">
           <button
             onClick={() => handlePageChange(pagination.currentPage - 1)}
@@ -247,7 +193,6 @@ export function DynamicCallRecordsTable({
             <ChevronLeftIcon className="h-4 w-4 mr-1" />
             Previous
           </button>
-          
           <div className="flex items-center space-x-1">
             {generatePageNumbers().map((page, index) => (
               <button
@@ -266,7 +211,6 @@ export function DynamicCallRecordsTable({
               </button>
             ))}
           </div>
-          
           <button
             onClick={() => handlePageChange(pagination.currentPage + 1)}
             disabled={!pagination.hasNextPage}

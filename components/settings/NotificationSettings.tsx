@@ -54,7 +54,7 @@ export function NotificationSettings() {
       ...prev,
       [category]: {
         ...prev[category],
-        [setting]: !prev[category][setting as keyof typeof prev[category]]
+        [setting]: !(prev[category] as any)[setting]
       }
     }))
   }

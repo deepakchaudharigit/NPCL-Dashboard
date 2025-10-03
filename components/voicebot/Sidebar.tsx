@@ -36,7 +36,7 @@ export function Sidebar() {
   ]
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-60 bg-white border-r border-gray-200 z-50 p-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 shadow-lg md:shadow-none">
+    <div className="h-full w-full bg-white border-r border-gray-200 flex flex-col">
       {/* Logo Section */}
       <div className="px-3 py-4 border-b border-gray-100">
         <div className="flex items-center justify-center px-4 py-3 mx-3 rounded-lg bg-gray-50">
@@ -52,7 +52,7 @@ export function Sidebar() {
       </div>
 
       {/* Navigation Menu */}
-      <nav className="px-3 py-4">
+      <nav className="px-3 py-4 flex-1">
         <ul className="space-y-3">
           {navigation.map((item) => {
             const Icon = item.icon
@@ -83,7 +83,7 @@ export function Sidebar() {
       </nav>
 
       {/* Logout Button */}
-      <div className="absolute bottom-6 left-3 right-3">
+      <div className="p-3 border-t border-gray-100">
         <LogoutButton className="w-full h-11 flex items-center justify-center gap-2 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors">
           <PowerIcon className="h-4 w-4" />
           Logout
