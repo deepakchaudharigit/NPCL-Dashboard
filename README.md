@@ -1,4 +1,16 @@
-# NPCL Dashboard
+# NPCL 
+
+## 1. Dashboard
+
+<img width="2880" height="1622" alt="image" src="https://github.com/user-attachments/assets/912fe048-2682-495e-9d80-3c245f3f1471" />
+
+## 2. Reports
+
+<img width="2870" height="1618" alt="image" src="https://github.com/user-attachments/assets/fc56607c-a7fa-464b-9480-51a2bdd84bef" />
+
+## 3. Settings
+
+<img width="2852" height="1606" alt="image" src="https://github.com/user-attachments/assets/8de0ee4d-5d19-4d5d-85b6-88fa7c08e823" />
 
 A comprehensive Power Management Dashboard for NPCL built with Next.js 14, TypeScript, Prisma, and PostgreSQL.
 
@@ -245,3 +257,4 @@ For support, email support@npcl.com or create an issue in the GitHub repository.
 - [ ] Advanced user permissions
 - [ ] API rate limiting
 - [ ] Data export functionality
+
